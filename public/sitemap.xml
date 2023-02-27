@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://nitinsharmacs.github.io/</loc>
+    <lastmod>2023-02-26T15:44:50+05:30</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/tech/docker/docker-image-layers/</loc>
+    <lastmod>2023-02-26T15:44:50+05:30</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/tech/</loc>
+    <lastmod>2023-02-26T15:44:50+05:30</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/tech/docker/getting-started-with-docker/</loc>
+    <lastmod>2023-02-19T11:53:43+05:30</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/welcome-to-bitphile/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/categories/</loc>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/tags/</loc>
+  </url>
+</urlset>
