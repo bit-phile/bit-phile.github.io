@@ -1,256 +1,27 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>Getting Started With Docker | bitPhile</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Introduction Developing softwares and applications is getting complex day by day. This introduces the complexity in running and deploying the applications in different machines or environments. It also includes to make sure it works everywhere no matter what architecture of the host machine is.
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title>Getting Started With Docker | bitPhile</title><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=description content="Introduction Developing softwares and applications is getting complex day by day. This introduces the complexity in running and deploying the applications in different machines or environments. It also includes to make sure it works everywhere no matter what architecture of the host machine is.
 Applications running in same environment can conflict with other applications. This can cause malfunctions and make application development less effective.
-To solve this problem we need isolation and virtual machine is one way to achieve this.">
-    <meta name="generator" content="Hugo 0.92.2" />
-    
-    
-    
-    
-      <meta name="robots" content="noindex, nofollow">
-    
-
-    
-<link rel="stylesheet" href="/ananke/css/main.min.css" >
-
-
-
-    
-    
-    
-      
-
-    
-
-    
-    
-    <meta property="og:title" content="Getting Started With Docker" />
-<meta property="og:description" content="Introduction Developing softwares and applications is getting complex day by day. This introduces the complexity in running and deploying the applications in different machines or environments. It also includes to make sure it works everywhere no matter what architecture of the host machine is.
+To solve this problem we need isolation and virtual machine is one way to achieve this."><meta name=generator content="Hugo 0.110.0"><meta name=robots content="noindex, nofollow"><link rel=stylesheet href=/ananke/css/main.min.css><meta property="og:title" content="Getting Started With Docker"><meta property="og:description" content="Introduction Developing softwares and applications is getting complex day by day. This introduces the complexity in running and deploying the applications in different machines or environments. It also includes to make sure it works everywhere no matter what architecture of the host machine is.
 Applications running in same environment can conflict with other applications. This can cause malfunctions and make application development less effective.
-To solve this problem we need isolation and virtual machine is one way to achieve this." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://nitinsharmacs.github.io/tech/docker/getting-started-with-docker/" /><meta property="article:section" content="tech" />
-<meta property="article:published_time" content="2023-02-19T11:53:43+05:30" />
-<meta property="article:modified_time" content="2023-02-19T11:53:43+05:30" />
-
-<meta itemprop="name" content="Getting Started With Docker">
-<meta itemprop="description" content="Introduction Developing softwares and applications is getting complex day by day. This introduces the complexity in running and deploying the applications in different machines or environments. It also includes to make sure it works everywhere no matter what architecture of the host machine is.
+To solve this problem we need isolation and virtual machine is one way to achieve this."><meta property="og:type" content="article"><meta property="og:url" content="https://bit-phile.github.io/tech/docker/getting-started-with-docker/"><meta property="article:section" content="tech"><meta property="article:published_time" content="2023-02-19T11:53:43+05:30"><meta property="article:modified_time" content="2023-02-19T11:53:43+05:30"><meta itemprop=name content="Getting Started With Docker"><meta itemprop=description content="Introduction Developing softwares and applications is getting complex day by day. This introduces the complexity in running and deploying the applications in different machines or environments. It also includes to make sure it works everywhere no matter what architecture of the host machine is.
 Applications running in same environment can conflict with other applications. This can cause malfunctions and make application development less effective.
-To solve this problem we need isolation and virtual machine is one way to achieve this."><meta itemprop="datePublished" content="2023-02-19T11:53:43+05:30" />
-<meta itemprop="dateModified" content="2023-02-19T11:53:43+05:30" />
-<meta itemprop="wordCount" content="1121">
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Getting Started With Docker"/>
-<meta name="twitter:description" content="Introduction Developing softwares and applications is getting complex day by day. This introduces the complexity in running and deploying the applications in different machines or environments. It also includes to make sure it works everywhere no matter what architecture of the host machine is.
+To solve this problem we need isolation and virtual machine is one way to achieve this."><meta itemprop=datePublished content="2023-02-19T11:53:43+05:30"><meta itemprop=dateModified content="2023-02-19T11:53:43+05:30"><meta itemprop=wordCount content="1126"><meta itemprop=keywords content><meta name=twitter:card content="summary"><meta name=twitter:title content="Getting Started With Docker"><meta name=twitter:description content="Introduction Developing softwares and applications is getting complex day by day. This introduces the complexity in running and deploying the applications in different machines or environments. It also includes to make sure it works everywhere no matter what architecture of the host machine is.
 Applications running in same environment can conflict with other applications. This can cause malfunctions and make application development less effective.
-To solve this problem we need isolation and virtual machine is one way to achieve this."/>
-
-	
-  </head>
-
-  <body class="ma0 avenir bg-near-white">
-
-    
-   
-  
-
-  <header>
-    <div class="bg-black">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l justify-between items-center center">
-    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
-      
-        bitPhile
-      
-    </a>
-    <div class="flex-l items-center">
-      
-
-      
-      
-<div class="ananke-socials">
-  
-</div>
-
-    </div>
-  </div>
-</nav>
-
-    </div>
-  </header>
-
-
-
-    <main class="pb7" role="main">
-      
-  
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
-    <header class="mt4 w-100">
-      <aside class="instapaper_ignoref b helvetica tracked">
-          
-        TECHES
-      </aside>
-      
-
-
-
-
-
-
-
-
-
-
-  <div id="sharing" class="mt3 ananke-socials">
-    
-  </div>
-
-
-      <h1 class="f1 athelas mt3 mb1">Getting Started With Docker</h1>
-      
-      
-      
-      <time class="f6 mv4 dib tracked" datetime="2023-02-19T11:53:43+05:30">February 19, 2023</time>
-      
-
-      
-      
-    </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p><img src="https://miro.medium.com/max/1400/1*vb_5008Zbt_pHj7qx44p0Q.png" alt="Dockerfile-build-docker-image-docker-container"></p>
-<h1 id="introduction">Introduction</h1>
-<p>Developing softwares and applications is getting complex day by day. This introduces the complexity in running and deploying the applications in different machines or environments. It also includes to make sure it works everywhere no matter what architecture of the host machine is.</p>
-<p>Applications running in same environment can conflict with other applications. This can cause malfunctions and make application development less effective.</p>
-<p>To solve this problem we need isolation and virtual machine is one way to achieve this. We can have different virtual machine to run the applications that will be independent from other applications environments.</p>
-<p>However, using virtual machine has its own pros and cons. Some of these are followings:</p>
-<h2 id="virtual-machine-pros">Virtual Machine Pros</h2>
-<ol>
-<li>Stronger isolation and security as it provides hardware level isolation which makes them more secure and isolated.</li>
-</ol>
-<h2 id="virtual-machine-cons">Virtual Machine Cons</h2>
-<ol>
-<li>Requires more resources. Virtual machine requires for guest system operation to run which consumes more resources.</li>
-<li>Startup time is more in virtual machines as it has to boot the whole operating system.</li>
-<li>Portability is less as virtual machines are tied to specific hardware and requires additional configurations to run.</li>
-</ol>
-<p>So, what alternative do we have to achieve this isolated environment? The answer is <strong>containerization</strong>.</p>
-<h1 id="containerization">Containerization</h1>
-<p>Just to get started with this concept, I would like to give an example. We have seen containers which are used on ships to transport things. These containers have isolated environments and temperatures specific to the items they are containing.</p>
-<p>Similarly, containers can contain application and supporting libraries required to run the application. This helps in running application in any environment no matter what host system OS and architecture is.</p>
-<h1 id="docker">Docker</h1>
-<p>Docker is a containerization tool that is used to create and run containers. There are several other alternatives of docker like Podman, openVZ etc.</p>
-<h2 id="architecture">Architecture</h2>
-<p>Docker uses client-server architecture where docker client talks with docker daemon which can run on either host machine, virtual machine or a machine on the cloud. Docker client can connect to multiple daemons.</p>
-<p><img src="https://docs.docker.com/engine/images/architecture.svg" alt="https://docs.docker.com/engine/images/architecture.svg"></p>
-<h3 id="docker-client">Docker client</h3>
-<p>Docker client is an interface that lets user to create and run containers. Client talks with docker daemon using Docker API requests. It is not more than an application which can be web based or cli that sends request to server and gets response back.</p>
-<p>Server or daemon performs the requested job.</p>
-<h3 id="docker-daemon">Docker daemon</h3>
-<p>Docker daemon is the server that accepts request from the docker client and performs respective job. It can run on host machine or virtual machine. Docker client can connect to multiple docker daemon and change the daemon using docker client provided commands.</p>
-<p>For example,</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker context ls
-</code></pre></div><p>It shows available contexts or daemon where client can connect to.</p>
-<pre tabindex="0"><code>NAME                DESCRIPTION                               DOCKER ENDPOINT                                     KUBERNETES ENDPOINT   ORCHESTRATOR
+To solve this problem we need isolation and virtual machine is one way to achieve this."></head><body class="ma0 avenir bg-near-white"><header><div class=bg-black><nav class="pv3 ph3 ph4-ns" role=navigation><div class="flex-l justify-between items-center center"><a href=/ class="f3 fw2 hover-white no-underline white-90 dib">bitPhile</a><div class="flex-l items-center"><div class=ananke-socials></div></div></div></nav></div></header><main class=pb7 role=main><article class="flex-l flex-wrap justify-between mw8 center ph3"><header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked">TECHES</aside><div id=sharing class="mt3 ananke-socials"></div><h1 class="f1 athelas mt3 mb1">Getting Started With Docker</h1><time class="f6 mv4 dib tracked" datetime=2023-02-19T11:53:43+05:30>February 19, 2023</time></header><div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p><img src=https://miro.medium.com/max/1400/1*vb_5008Zbt_pHj7qx44p0Q.png alt=Dockerfile-build-docker-image-docker-container></p><h1 id=introduction>Introduction</h1><p>Developing softwares and applications is getting complex day by day. This introduces the complexity in running and deploying the applications in different machines or environments. It also includes to make sure it works everywhere no matter what architecture of the host machine is.</p><p>Applications running in same environment can conflict with other applications. This can cause malfunctions and make application development less effective.</p><p>To solve this problem we need isolation and virtual machine is one way to achieve this. We can have different virtual machine to run the applications that will be independent from other applications environments.</p><p>However, using virtual machine has its own pros and cons. Some of these are followings:</p><h2 id=virtual-machine-pros>Virtual Machine Pros</h2><ol><li>Stronger isolation and security as it provides hardware level isolation which makes them more secure and isolated.</li></ol><h2 id=virtual-machine-cons>Virtual Machine Cons</h2><ol><li>Requires more resources. Virtual machine requires for guest system operation to run which consumes more resources.</li><li>Startup time is more in virtual machines as it has to boot the whole operating system.</li><li>Portability is less as virtual machines are tied to specific hardware and requires additional configurations to run.</li></ol><p>So, what alternative do we have to achieve this isolated environment? The answer is <strong>containerization</strong>.</p><h1 id=containerization>Containerization</h1><p>Just to get started with this concept, I would like to give an example. We have seen containers which are used on ships to transport things. These containers have isolated environments and temperatures specific to the items they are containing.</p><p>Similarly, containers can contain application and supporting libraries required to run the application. This helps in running application in any environment no matter what host system OS and architecture is.</p><h1 id=docker>Docker</h1><p>Docker is a containerization tool that is used to create and run containers. There are several other alternatives of docker like Podman, openVZ etc.</p><h2 id=architecture>Architecture</h2><p>Docker uses client-server architecture where docker client talks with docker daemon which can run on either host machine, virtual machine or a machine on the cloud. Docker client can connect to multiple daemons.</p><p><img src=https://docs.docker.com/engine/images/architecture.svg alt=https://docs.docker.com/engine/images/architecture.svg></p><h3 id=docker-client>Docker client</h3><p>Docker client is an interface that lets user to create and run containers. Client talks with docker daemon using Docker API requests. It is not more than an application which can be web based or cli that sends request to server and gets response back.</p><p>Server or daemon performs the requested job.</p><h3 id=docker-daemon>Docker daemon</h3><p>Docker daemon is the server that accepts request from the docker client and performs respective job. It can run on host machine or virtual machine. Docker client can connect to multiple docker daemon and change the daemon using docker client provided commands.</p><p>For example,</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>docker context ls
+</span></span></code></pre></div><p>It shows available contexts or daemon where client can connect to.</p><pre tabindex=0><code>NAME                DESCRIPTION                               DOCKER ENDPOINT                                     KUBERNETES ENDPOINT   ORCHESTRATOR
 default             Current DOCKER_HOST based configuration   tcp://localhost:2376                                                      swarm
 desktop-linux                                                 unix:///Users/test/.docker/run/docker.sock                         
 rancher-desktop *   Rancher Desktop moby context              unix:///Users/test/.rd/docker.sock
-</code></pre><p>To change context, use</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker context use rancher-desktop
-</code></pre></div><blockquote>
-<p>Note: Rancher desktop is an alternative of Docker desktop you can use. Docker desktop requires lisence. Rancher desktop creates lightweight virtual machine on host system which contains docker components. Docker daemon runs inside that virtual machine.</p>
-</blockquote>
-<h3 id="docker-container-and-image">Docker Container and Image</h3>
-<p><strong>Container</strong></p>
-<p>As I mentioned before, container is a self-contained unit having all the necessary things required for the item container is containing. In this context, a container is a self-contained runnable unit which comprise the application and supporting libraries which are required to run that application.</p>
-<p><strong><strong><strong><strong><strong>Image</strong></strong></strong></strong></strong></p>
-<p>An image is a blueprint of container which defines a container. An image contains all the instructions and resources required to create a container.</p>
-<p>If you have work on OOPs, you must have heard about classes and objects. You can think of images as classes and objects as containers.</p>
-<p>You can create your own image by using other image as base. I will show you shortly how to do it.</p>
-<h3 id="registry">Registry</h3>
-<p>This is the place where you can push your docker images. It&rsquo;s like github where you push source code onto github and here you would be pushing docker images. You can also pull docker images stored on docker registry.</p>
-<p>Docker provides docker hub register where you can get almost all docker images pushed by other people. Visit <a href="http://hub.docker.com">hub.docker.com</a> for more details.</p>
-<h2 id="dockerfile">Dockerfile</h2>
-<p><code>Dockerfile</code> is used to build docker images. It contains all the instructions required to build an image. Following is an example of a <code>Dockerfile</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> fedora:latest</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> dnf install figlet -y<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENTRYPOINT</span> [<span style="color:#e6db74">&#34;figlet&#34;</span>]<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span> [<span style="color:#e6db74">&#34;bitPhile&#34;</span>]<span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><h3 id="explaination">Explaination</h3>
-<ol>
-<li><code>FROM</code> tells to use <code>fedora:latest</code> as base image. Base image is the parent image where you image is based on. A new image will be built on top of this base image.</li>
-<li><code>RUN</code> instruction is used to run the given command while building the image.</li>
-<li><code>ENTRYPOINT</code> is the starting script that will run when the container is started.</li>
-<li><code>CMD</code> specifies the default command to run when container is started.</li>
-</ol>
-<blockquote>
-<p>There is a difference between <code>ENTRYPOINT</code> and <code>CMD</code>. When <code>ENTRYPOINT</code> is provided, whatever argument <code>CMD</code> instruction has will be append as arguments to <code>ENTRYPOINT</code> . For instance if we will see the above example, the final command will be <code>figlet hello world</code>.</p>
-</blockquote>
-<h3 id="building-docker-image">Building Docker Image</h3>
-<p>Save the above file and run the following docker command.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker build -t docker-fedora-test .
-</code></pre></div><p><code>build</code> is the subcommand that tells to build a docker image. <code>-t</code> is tag where <code>docker-fedora-test</code> is passed as tag name. <code>.</code> is the context.</p>
-<blockquote>
-<p><strong>What is context?</strong> Context the part of the host file system that is required to build docker image. For example, there maybe some file or data which is required in image building. So, we pass the those files using context.</p>
-<p>We can only pass one context.</p>
-</blockquote>
-<p>A docker image is built through several layers of images. Each of the instruction in <code>Dockerfile</code> runs in a separate image layer. To learn more about docker image layers, refer my blog <a href="/tech/docker/docker-image-layers/">docker image layers</a>.</p>
-<h3 id="running-docker-image">Running Docker Image</h3>
-<p>To run the image we&rsquo;ve just built, run the following docker command.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker run docker-fedora-test
-</code></pre></div><p>This gives output as,</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"> _     _ _   ____  _     _ _      
-| |__ <span style="color:#f92672">(</span>_<span style="color:#f92672">)</span> |_|  _ <span style="color:#ae81ff">\|</span> |__ <span style="color:#f92672">(</span>_<span style="color:#f92672">)</span> | ___ 
-| <span style="color:#e6db74">&#39;_ \| | __| |_) | &#39;</span>_ <span style="color:#ae81ff">\|</span> | |/ _ <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>| |_<span style="color:#f92672">)</span> | | |_|  __/| | | | | |  __/
-|_.__/|_|<span style="color:#ae81ff">\_</span>_|_|   |_| |_|_|_|<span style="color:#ae81ff">\_</span>__|                              
-</code></pre></div><p>Awesome, right!</p>
-<p>We can also pass argument while we are running the container.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker run docker-fedora-test hello world
-</code></pre></div><p><code>hello world</code> gets append as argument to <code>fedora</code> entrypoint command.</p>
-<p>Folks, this is it for now. There are lots of things come in docker and it is hard to put everything in one place both for you and me. So, see you in next post on docker. Stay tuned.</p>
-<p>Please provide your feedback as it helps me improve the posts and get more information to you.</p>
-<h2 id="references">References</h2>
-<ol>
-<li><a href="https://docs.docker.com/engine/reference/builder/">https://docs.docker.com/engine/reference/builder/</a> for <code>Dockerfile</code></li>
-<li><a href="https://docs.docker.com/get-started/overview/">https://docs.docker.com/get-started/overview/</a> for overview and architecture</li>
-</ol>
-<ul class="pa0">
-  
-</ul>
-<div class="mt6 instapaper_ignoref">
-      
-      
-      </div>
-    </div>
-
-    <aside class="w-30-l mt6-l">
-
-
-
-
-</aside>
-
-  </article>
-
-    </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://nitinsharmacs.github.io/" >
-    &copy;  bitPhile 2023 
-  </a>
-    <div>
-<div class="ananke-socials">
-  
-</div>
-</div>
-  </div>
-</footer>
-
-  </body>
-</html>
+</code></pre><p>To change context, use</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>docker context use rancher-desktop
+</span></span></code></pre></div><blockquote><p>Note: Rancher desktop is an alternative of Docker desktop you can use. Docker desktop requires lisence. Rancher desktop creates lightweight virtual machine on host system which contains docker components. Docker daemon runs inside that virtual machine.</p></blockquote><h3 id=docker-container-and-image>Docker Container and Image</h3><p><strong>Container</strong></p><p>As I mentioned before, container is a self-contained unit having all the necessary things required for the item container is containing. In this context, a container is a self-contained runnable unit which comprise the application and supporting libraries which are required to run that application.</p><p><strong><strong><strong><strong><strong>Image</strong></strong></strong></strong></strong></p><p>An image is a blueprint of container which defines a container. An image contains all the instructions and resources required to create a container.</p><p>If you have work on OOPs, you must have heard about classes and objects. You can think of images as classes and objects as containers.</p><p>You can create your own image by using other image as base. I will show you shortly how to do it.</p><h3 id=registry>Registry</h3><p>This is the place where you can push your docker images. It&rsquo;s like github where you push source code onto github and here you would be pushing docker images. You can also pull docker images stored on docker registry.</p><p>Docker provides docker hub register where you can get almost all docker images pushed by other people. Visit <a href=http://hub.docker.com>hub.docker.com</a> for more details.</p><h2 id=dockerfile>Dockerfile</h2><p><code>Dockerfile</code> is used to build docker images. It contains all the instructions required to build an image. Following is an example of a <code>Dockerfile</code>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Dockerfile data-lang=Dockerfile><span style=display:flex><span><span style=color:#66d9ef>FROM</span><span style=color:#e6db74> fedora:latest</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>RUN</span> dnf install figlet -y<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>ENTRYPOINT</span> [<span style=color:#e6db74>&#34;figlet&#34;</span>]<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span><span style=color:#66d9ef>CMD</span> [<span style=color:#e6db74>&#34;bitPhile&#34;</span>]<span style=color:#960050;background-color:#1e0010>
+</span></span></span></code></pre></div><h3 id=explaination>Explaination</h3><ol><li><code>FROM</code> tells to use <code>fedora:latest</code> as base image. Base image is the parent image where you image is based on. A new image will be built on top of this base image.</li><li><code>RUN</code> instruction is used to run the given command while building the image.</li><li><code>ENTRYPOINT</code> is the starting script that will run when the container is started.</li><li><code>CMD</code> specifies the default command to run when container is started.</li></ol><blockquote><p>There is a difference between <code>ENTRYPOINT</code> and <code>CMD</code>. When <code>ENTRYPOINT</code> is provided, whatever argument <code>CMD</code> instruction has will be append as arguments to <code>ENTRYPOINT</code> . For instance if we will see the above example, the final command will be <code>figlet hello world</code>.</p></blockquote><h3 id=building-docker-image>Building Docker Image</h3><p>Save the above file and run the following docker command.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>docker build -t docker-fedora-test .
+</span></span></code></pre></div><p><code>build</code> is the subcommand that tells to build a docker image. <code>-t</code> is tag where <code>docker-fedora-test</code> is passed as tag name. <code>.</code> is the context.</p><blockquote><p><strong>What is context?</strong> Context the part of the host file system that is required to build docker image. For example, there maybe some file or data which is required in image building. So, we pass the those files using context.</p><p>We can only pass one context.</p></blockquote><p>A docker image is built through several layers of images. Each of the instruction in <code>Dockerfile</code> runs in a separate image layer. To learn more about docker image layers, refer my blog <a href=/tech/docker/docker-image-layers/>docker image layers</a>.</p><h3 id=running-docker-image>Running Docker Image</h3><p>To run the image we&rsquo;ve just built, run the following docker command.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>docker run docker-fedora-test
+</span></span></code></pre></div><p>This gives output as,</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span> _     _ _   ____  _     _ _      
+</span></span><span style=display:flex><span>| |__ <span style=color:#f92672>(</span>_<span style=color:#f92672>)</span> |_|  _ <span style=color:#ae81ff>\|</span> |__ <span style=color:#f92672>(</span>_<span style=color:#f92672>)</span> | ___ 
+</span></span><span style=display:flex><span>| <span style=color:#e6db74>&#39;_ \| | __| |_) | &#39;</span>_ <span style=color:#ae81ff>\|</span> | |/ _ <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>| |_<span style=color:#f92672>)</span> | | |_|  __/| | | | | |  __/
+</span></span><span style=display:flex><span>|_.__/|_|<span style=color:#ae81ff>\_</span>_|_|   |_| |_|_|_|<span style=color:#ae81ff>\_</span>__|                              
+</span></span></code></pre></div><p>Awesome, right!</p><p>We can also pass argument while we are running the container.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>docker run docker-fedora-test hello world
+</span></span></code></pre></div><p><code>hello world</code> gets append as argument to <code>fedora</code> entrypoint command.</p><p>Folks, this is it for now. There are lots of things come in docker and it is hard to put everything in one place both for you and me. So, see you in next post on docker. Stay tuned.</p><p>Please provide your feedback as it helps me improve the posts and get more information to you.</p><h2 id=references>References</h2><ol><li><a href=https://docs.docker.com/engine/reference/builder/>https://docs.docker.com/engine/reference/builder/</a> for <code>Dockerfile</code></li><li><a href=https://docs.docker.com/get-started/overview/>https://docs.docker.com/get-started/overview/</a> for overview and architecture</li></ol><ul class=pa0></ul><div class="mt6 instapaper_ignoref"></div></div><aside class="w-30-l mt6-l"></aside></article></main><footer class="bg-black bottom-0 w-100 pa3" role=contentinfo><div class="flex justify-between"><a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href=https://bit-phile.github.io/>&copy; bitPhile 2023</a><div><div class=ananke-socials></div></div></div></footer></body></html>
