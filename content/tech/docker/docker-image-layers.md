@@ -6,4 +6,4 @@ draft: false
 
 # What are Docker Image Layers
 
-//content
+Some cool stuff is going to come. Stay stuned!
