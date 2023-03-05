@@ -8,51 +8,51 @@ draft: false
 
 # Introduction
 
-Developing softwares and applications is getting complex day by day. This introduces the complexity in running and deploying the applications in different machines or environments. It also includes to make sure it works everywhere no matter what architecture of the host machine is.
+Developing software and applications is getting more complex day by day. This introduces the complexity of running and deploying the applications in different machines or environments. It also includes making sure it works everywhere no matter what the architecture of the host machine is.
 
-Applications running in same environment can conflict with other applications. This can cause malfunctions and make application development less effective. 
+Applications running in the same environment can conflict with other applications. This can cause malfunctions and make application development less effective. 
 
-To solve this problem we need isolation and virtual machine is one way to achieve this. We can have different virtual machine to run the applications that will be independent from other applications environments.
+To solve this problem we need isolation and a virtual machine is one way to achieve this. We can have different virtual machines to run the applications that will be independent of other applications environments.
 
-However, using virtual machine has its own pros and cons. Some of these are followings:
+However, using a virtual machine has its own pros and cons. Some of these are the followings:
 
 ## Virtual Machine Pros
 
-1. Stronger isolation and security as it provides hardware level isolation which makes them more secure and isolated.
+1. Stronger isolation and security as it provides hardware-level isolation which makes them more secure and isolated.
 
 ## Virtual Machine Cons
 
-1. Requires more resources. Virtual machine requires for guest system operation to run which consumes more resources.
+1. Requires more resources. Virtual machine requires guest system operation to run which consumes more resources.
 2. Startup time is more in virtual machines as it has to boot the whole operating system.
-3. Portability is less as virtual machines are tied to specific hardware and requires additional configurations to run.
+3. Portability is less as virtual machines are tied to specific hardware and require additional configurations to run.
 
 So, what alternative do we have to achieve this isolated environment? The answer is **containerization**.
 
 # Containerization
 
-Just to get started with this concept, I would like to give an example. We have seen containers which are used on ships to transport things. These containers have isolated environments and temperatures specific to the items they are containing. 
+Just to get started with this concept, I would like to give an example. We have seen containers that are used on ships to transport things. These containers have isolated environments and temperatures specific to the items they are containing. 
 
-Similarly, containers can contain application and supporting libraries required to run the application. This helps in running application in any environment no matter what host system OS and architecture is.
+Similarly, containers can contain applications and supporting libraries required to run the application. This helps in running applications in any environment no matter what host system OS and architecture are.
 
 # Docker
 
-Docker is a containerization tool that is used to create and run containers. There are several other alternatives of docker like Podman, openVZ etc.
+Docker is a containerization tool that is used to create and run containers. There are several other alternatives to docker like Podman, openVZ, etc.
 
 ## Architecture
 
-Docker uses client-server architecture where docker client talks with docker daemon which can run on either host machine, virtual machine or a machine on the cloud. Docker client can connect to multiple daemons.
+Docker uses client-server architecture where the docker client talks with the docker daemon which can run on either a host machine, a virtual machine, or a machine on the cloud. Docker clients can connect to multiple daemons.
 
 ![https://docs.docker.com/engine/images/architecture.svg](https://docs.docker.com/engine/images/architecture.svg)
 
 ### Docker client
 
-Docker client is an interface that lets user to create and run containers. Client talks with docker daemon using Docker API requests. It is not more than an application which can be web based or cli that sends request to server and gets response back. 
+Docker client is an interface that lets users create and run containers. Client talks with docker daemon using Docker API requests. It is not more than an application that can be web-based or cli that sends requests to the server and gets responses back. 
 
-Server or daemon performs the requested job. 
+The server or daemon performs the requested job. 
 
 ### Docker daemon
 
-Docker daemon is the server that accepts request from the docker client and performs respective job. It can run on host machine or virtual machine. Docker client can connect to multiple docker daemon and change the daemon using docker client provided commands.
+A Docker daemon is the server that accepts requests from the docker client and performs the respective job. It can run on a host machine or virtual machine. Docker clients can connect to multiple docker daemons and change the daemon using docker client-provided commands.
 
 For example,
 
@@ -60,7 +60,7 @@ For example,
 docker context ls
 ```
 
-It shows available contexts or daemon where client can connect to.
+It shows available contexts or daemons to which a client can connect to.
 
 ```
 NAME                DESCRIPTION                               DOCKER ENDPOINT                                     KUBERNETES ENDPOINT   ORCHESTRATOR
@@ -75,28 +75,28 @@ To change context, use
 docker context use rancher-desktop
 ```
 
-> Note: Rancher desktop is an alternative of Docker desktop you can use. Docker desktop requires lisence. Rancher desktop creates lightweight virtual machine on host system which contains docker components. Docker daemon runs inside that virtual machine.
+> Note: Rancher desktop is an alternative to Docker desktop you can use. Docker desktop requires a license. Rancher desktop creates a lightweight virtual machine on the host system which contains docker components. Docker daemon runs inside that virtual machine.
 > 
 
 ### Docker Container and Image
 
 **Container**
 
-As I mentioned before, container is a self-contained unit having all the necessary things required for the item container is containing. In this context, a container is a self-contained runnable unit which comprise the application and supporting libraries which are required to run that application.
+As I mentioned before, a container is a self-contained unit having all the necessary things required for the item container is containing. In this context, a container is a self-contained runnable unit that comprises the application and supporting libraries that are required to run that application.
 
-**********Image**********
+**Image**
 
-An image is a blueprint of container which defines a container. An image contains all the instructions and resources required to create a container. 
+An image is a blueprint of a container that defines a container. An image contains all the instructions and resources required to create a container. 
 
-If you have work on OOPs, you must have heard about classes and objects. You can think of images as classes and objects as containers.
+If you have worked on OOPs, you must have heard about classes and objects. You can think of images as classes and objects as containers.
 
-You can create your own image by using other image as base. I will show you shortly how to do it.
+You can create your image by using other images as a base. I will show you shortly how to do it.
 
 ### Registry
 
-This is the place where you can push your docker images. It's like github where you push source code onto github and here you would be pushing docker images. You can also pull docker images stored on docker registry. 
+This is the place where you can push your docker images. It's like GitHub where you push source code onto GitHub and here you would be pushing docker images. You can also pull docker images stored on the docker registry. 
 
-Docker provides docker hub register where you can get almost all docker images pushed by other people. Visit [hub.docker.com](http://hub.docker.com) for more details.
+Docker provides a docker hub register where you can get almost all docker images pushed by other people. Visit [hub.docker.com](http://hub.docker.com) for more details.
 
 ## Dockerfile
 
@@ -110,14 +110,14 @@ ENTRYPOINT ["figlet"]
 CMD ["bitPhile"]
 ```
 
-### Explaination
+### Explanation
 
-1. `FROM` tells to use `fedora:latest` as base image. Base image is the parent image where you image is based on. A new image will be built on top of this base image.
+1. `FROM` specifies to use `fedora:latest` as the base image. The base image is the parent image on which your image is based. A new image will be built on top of this base image.
 2. `RUN` instruction is used to run the given command while building the image. 
 3. `ENTRYPOINT` is the starting script that will run when the container is started.
-4. `CMD` specifies the default command to run when container is started.
+4. `CMD` specifies the default command to run when the container is started.
 
-> There is a difference between `ENTRYPOINT` and `CMD`. When `ENTRYPOINT` is provided, whatever argument `CMD` instruction has will be append as arguments to `ENTRYPOINT` . For instance if we will see the above example, the final command will be `figlet hello world`.
+> There is a difference between `ENTRYPOINT` and `CMD`. When `ENTRYPOINT` is provided, whatever argument `CMD` instruction has will be append as arguments to `ENTRYPOINT`. For instance, if we will see the above example, the final command will be `figlet hello world`.
 
 ### Building Docker Image
 
@@ -127,13 +127,13 @@ Save the above file and run the following docker command.
 docker build -t docker-fedora-test .
 ```
 
-`build` is the subcommand that tells to build a docker image. `-t` is tag where `docker-fedora-test` is passed as tag name. `.` is the context.
+`build` is the subcommand that tells to build a docker image. `-t` is a tag where `docker-fedora-test` is passed as a tag name. `.` is the context.
 
-> **What is context?** Context the part of the host file system that is required to build docker image. For example, there maybe some file or data which is required in image building. So, we pass the those files using context. 
+> **What is context?** Context the part of the host file system that is required to build a docker image. For example, there may be some file or data which is required in image building. So, we pass those files using context. 
 > 
 > We can only pass one context.
 
-A docker image is built through several layers of images. Each of the instruction in `Dockerfile` runs in a separate image layer. To learn more about docker image layers, refer my blog [docker image layers](/tech/docker/docker-image-layers/).
+A docker image is built through several layers of images. Each of the instructions in `Dockerfile` runs in a separate image layer. To learn more about docker image layers, refer to my blog [docker image layers](/tech/docker/docker-image-layers/).
 
 ### Running Docker Image
 
@@ -153,17 +153,17 @@ This gives output as,
 |_.__/|_|\__|_|   |_| |_|_|_|\___|                              
 ```
 
-Awesome, right!
+Awesome, right?
 
-We can also pass argument while we are running the container.
+We can also pass arguments while we are running the container.
 
 ``` shell
 docker run docker-fedora-test hello world
 ```
 
-`hello world` gets append as argument to `fedora` entrypoint command.
+`hello world` gets append as an argument to `fedora` entrypoint command.
 
-Folks, this is it for now. There are lots of things come in docker and it is hard to put everything in one place both for you and me. So, see you in next post on docker. Stay tuned. 
+Folks, this is it for now. There are lots of things that come in docker and it is hard to put everything in one place both for you and me. So, see you in the next post on docker. Stay tuned. 
 
 Please provide your feedback as it helps me improve the posts and get more information to you.
 

@@ -6,20 +6,20 @@ draft: false
 
 ![Docker-image-layers](/tech/docker/docker-image-layers.png)
 
-# Deep dive into Docker Image Layers?
+# Deep dive into Docker Image Layers
 
-In my previous post [Getting started with docker](/tech/docker/getting-started-with-docker), I have explained the basics of docker. This post,  we will be deep diving into docker image layers. We will be covering following topics in this post,
+In my previous post [Getting started with docker](/tech/docker/getting-started-with-docker), I explained the basics of docker. In this post,  we will be deep diving into docker image layers. We will be covering the following topics in this post,
 
 1. What are docker image layers?
-2. Why knowing docker image layers matters?
-3. Where these intermediatery images reside and how to see them?
-4. What are the consitituents of a docker container size?
+2. Why does knowing docker image layers matter?
+3. Where do these intermediary images reside and how to see them?
+4. What are the constituents of a docker container size?
 
 Are you ready? Yes! So let's start...
 
 ## What are docker image layers?
 
-When we build a docker image using `Dockerfile`, you must have seen the logs on the terminal console. There you must have seen some `sha IDs` that it shows. Those `sha IDs` are nothing but intermediatery image layers IDs.
+When we build a docker image using `Dockerfile`, you must have seen the logs on the terminal console. There you must have seen some `sha IDs` that it shows. Those `sha IDs` are nothing but intermediary image layers IDs.
 
 ```shell
 ⟩ docker build -f Dockerfile.new -t bitphile/test-image .      (base)
@@ -40,21 +40,21 @@ Successfully built 4d85107b2c59
 Successfully tagged bitphile/test-image:latest
 ```
 
-A docker image is made up of several docker image layers. Each of the command in `Dockerfile` stacks up a new image layer on top of the previous one. 
+A docker image is made up of several docker image layers. Each of the commands in `Dockerfile` stacks up a new image layer on top of the previous one. 
 
-> Note : Commands in `Dockerfile` are those instructions which do some changes in file system. Any change made in file system creates a new image layer. So, commands are responsible for the creation of a new image layer.
+> Note: Commands in `Dockerfile` are those instructions which do some changes in the file system. Any change made in the file system creates a new image layer. So, commands are responsible for the creation of a new image layer.
 > For example, `COPY`, `RUN`, etc are commands.
 
-Following image shows the docker images layers having ID and their corresponding parent layer ID.
+The following image shows the docker image layers having ID and their corresponding parent layer ID.
 
 ![Docker-image-layers](/tech/docker/docker-image-layers.png)
 
-> Note: Each of the layers coming on top of existing one depends on their parent layer. Changing the sequence may altogether change the final image. Caching of image layers are also depend upon this (upcoming sections).
+> Note: Each of the layers coming on top of the existing one depends on their parent layer. Changing the sequence may altogether change the final image. Caching of image layers also depends upon this (upcoming sections).
 
 ### R/W image layers
-An image layer can be read only or read and write. All the intemediatery image layers are read only. One can't create a file in any of those layers. If anyone of you have worked on docker must be thinking, `bitPhile` is saying wrong as we can create files in running docker container. 
+An image layer can be read-only or read and write. All the intermediate image layers are read-only. One can't create a file in any of those layers. If anyone of you has worked on docker must be thinking, `bitPhile` is saying wrong as we can create files in running docker container. 
 
-Your concern is right. We can create files in docker container. The reason behind this is `Container Layer` which is explained in next section.
+Your concern is right. We can create files in the docker container. The reason behind this is `Container Layer` which is explained in the next section.
 
 ### Container Layer
 
@@ -63,16 +63,16 @@ When an image is turned into a container, a new thin layer is stacked on top of 
 ![thin-container-layer](/tech/docker/container-layer.jpeg)
 Source: https://docs.docker.com/storage/storagedriver/images/container-layers.jpg
 
-## Why knowing Image Layers matters?
-There are several reasons why one should know about docker image layers. Few of them are described below. 
+## Why does knowing Image Layers matter?
+There are several reasons why one should know about docker image layers. A few of them are described below. 
 
 ### Image Size
-An image is a pack of all dependencies, libraries and src code requied for an application. These images are stored on cloud registries and shared across the devices. Size becomes a foremost requirement for an image. 
+An image is a pack of all dependencies, libraries, and src code required for an application. These images are stored on cloud registries and shared across devices. Size becomes a foremost requirement for an image. 
 
-Image layers sizes consititute into the size of the final image. Identifying which layer is adding more size can help developer to find areas of concerns.
+Image layers size consititute into the size of the final image. Identifying which layer is adding more size can help the developer to find areas of concern.
 
 ### Layers are Cached
-Image layers are stored on the host machine for future builds. This helps buliding docker images faster.
+Image layers are stored on the host machine for future builds. This helps build docker images faster.
 
 Let's see an example. Consider two Dockerfiles, `Dockerfile.new-1` and `Dockerfile.new-2`.
 
@@ -99,7 +99,7 @@ FROM bitphile/my-base-image
 COPY app.sh ./app.sh
 ```
 
-Building the first image, the consoles shows,
+Building the first image, the consoles show,
 
 ```shell
 Sending build context to Docker daemon  7.168kB
@@ -119,7 +119,7 @@ Successfully built 4d85107b2c59
 Successfully tagged bitphile/my-new-image:latest
 ```
 
-For the second, it shows,
+The second, it shows,
 ```shell
 Sending build context to Docker daemon  8.192kB
 Step 1/2 : FROM bitphile/my-base-image
@@ -131,18 +131,18 @@ Successfully built 198fdf85c15b
 Successfully tagged bitphile/my-new-image-2:latest
 ```
 
-We can see it uses cache for second build. This increase the speed of building of image. Interesting, right?
+We can see it uses caches for the second build. This increases the speed of building the image. Interesting, right?
 
-> Note: If any insturuction changes, caches are not used for next instructions. New image layers are created for them from the scratch. Why this happens? Think about it!
+> Note: If any instruction changes, caches are not used for the next instructions. New image layers are created for them from the scratch. Why does this happen? Think about it!
 
 ## Seeing Image Layers
-Once final image is built, we can see intemediatery image layers by,
+Once the final image is built, we can see intermediary image layers by,
 
 ```shell
 docker history <image-name>
 ```
 
-So, running the above commands,
+So, by running the above commands,
 
 ```shell
 docker history bitphile/my-new-image
@@ -160,12 +160,12 @@ b2aa39c304c2   3 weeks ago      /bin/sh -c #(nop)  CMD ["/bin/sh"]              
 
 ```
 
-This shows intemediate image ID, Dockerfile instruction and size. 
+This shows the intermediate image ID, Dockerfile instruction, and size. 
 
-> Note: `<missing>` indicates that particular image is built on different machine or using [`builtKit`](https://docs.docker.com/build/buildkit/) docker builder.
+> Note: `<missing>` indicates that a particular image is built on a different machine or using [`builtKit`](https://docs.docker.com/build/buildkit/) docker builder.
 
 ### Image Layers on Machine
-We can find these image layers on host machine at location `/var/lib/docker`. If you are using a virtual machine to run docker daemon, ssh into that machine and access this location. 
+We can find these image layers on the host machine at location `/var/lib/docker`. If you are using a virtual machine to run a docker daemon, ssh into that machine and access this location. 
 
 Listing the contents of `/var/lib/docker` gives,
 
@@ -200,13 +200,13 @@ Listing content of `images/overlay2/imagedb/content/sha25`, we see,
 -rw------- 1 root root 2.1K Feb 26 09:35 da7260331379a532a15cf3e9bff522627b1574a9ce21bb06c92cea74992613fa
 ```
 
-As you can see `da7260331379a532a15cf3e9bff522627b1574a9ce21bb06c92cea74992613fa` is used in cache to build images.
+As you can see `da7260331379` is used as a cache to build the image.
 
 ## Docker Container Size
 
 There are two things, `size` and `virtual size`. 
 * `size` is the size of `container layer`. It comprises of all the files that are written `container layer`. 
-- `virtual size` is the sum of `size` and data of read only intermediate image layers. If two containers having same read only intemediate image layers will share same data which separate `container layer`  data.
+- `virtual size` is the sum of `size` and data of read-only intermediate image layers. If two containers have the same read-only intermediate image layers, will share the same data with separate `container layer`  data.
 
 
 For example, 
@@ -215,12 +215,12 @@ CONTAINER ID   IMAGE                                          COMMAND           
 7937d5f33e6e   bitphile/my-new-image-2                        "./app.sh"               5 seconds ago   Up 5 seconds                                    bitphile-test-container                                                                                       0B (virtual 9.29MB)
 ```
 
-shows container `bitphile-test-container` has `0B` `size` and `9.29MB` `virtual size`. If you see the size of the whole image itself if `9.29MB` which means it is all size of read only image layer data.
+shows container `bitphile-test-container` has `0B` `size` and `9.29MB` `virtual size`. If you see the size of the whole image itself is `9.29MB` which means it is all size of read-only image layer data.
 
 Now, adding a new file into the running container should increase the `size`.
 
 ```shell
-docker exec 7937d5f33e6e sh -c "echo helo world > file.txt"
+docker exec 7937d5f33e6e sh -c "echo hello world > file.txt"
 ```
 
 Now if we see the same container,
