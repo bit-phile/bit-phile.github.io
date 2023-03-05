@@ -101,7 +101,7 @@ Docker provides a docker hub register where you can get almost all docker images
 ## Dockerfile
 
 `Dockerfile` is used to build docker images. It contains all the instructions required to build an image. Following is an example of a `Dockerfile`. 
-%%TODO: mention syntax prefixes for Dockerfile%%
+<!---TODO: mention syntax prefixes for Dockerfile-->
 
 ```Dockerfile
 FROM fedora:latest
