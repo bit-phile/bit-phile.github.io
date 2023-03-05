@@ -1,6 +1,6 @@
 ---
 title: "Getting Started With Docker"
-date: 2023-02-19T11:53:43+05:30
+date: 2023-02-26T11:53:43+05:30
 draft: false
 ---
 
@@ -101,6 +101,7 @@ Docker provides docker hub register where you can get almost all docker images p
 ## Dockerfile
 
 `Dockerfile` is used to build docker images. It contains all the instructions required to build an image. Following is an example of a `Dockerfile`. 
+%%TODO: mention syntax prefixes for Dockerfile%%
 
 ```Dockerfile
 FROM fedora:latest
