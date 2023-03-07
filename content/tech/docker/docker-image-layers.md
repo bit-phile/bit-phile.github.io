@@ -4,7 +4,7 @@ date: 2023-03-05T13:00:22+05:30
 draft: false
 ---
 
-![Docker-image-layers](/tech/docker/docker-image-layers.png)
+![Docker-image-layers](/tech/docker/docker-image-layers.png "Docker Image Layers")
 
 # Deep dive into Docker Image Layers
 

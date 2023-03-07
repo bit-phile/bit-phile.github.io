@@ -4,7 +4,7 @@ date: 2023-02-26T11:53:43+05:30
 draft: false
 ---
 
-![Dockerfile-build-docker-image-docker-container](https://miro.medium.com/max/1400/1*vb_5008Zbt_pHj7qx44p0Q.png)
+![Dockerfile-build-docker-image-docker-container](https://miro.medium.com/max/1400/1*vb_5008Zbt_pHj7qx44p0Q.png "Dockerfile to docker image to docker container")
 
 # Introduction
 
