@@ -43,6 +43,7 @@ Docker is a containerization tool that is used to create and run containers. The
 Docker uses client-server architecture where the docker client talks with the docker daemon which can run on either a host machine, a virtual machine, or a machine on the cloud. Docker clients can connect to multiple daemons.
 
 ![https://docs.docker.com/engine/images/architecture.svg](https://docs.docker.com/engine/images/architecture.svg)
+Source: https://docs.docker.com/engine/images/architecture.svg
 
 ### Docker client
 
