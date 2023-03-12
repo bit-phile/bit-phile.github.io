@@ -4,41 +4,43 @@ date: 2023-03-12T10:38:56+05:30
 draft: false
 ---
 
-# Understanding Docker Volume Thorougly
+![Docker volume](/tech/docker/docker-volume.png)
+
+# Understanding Docker Volume Thoroughly
 
 ## Agenda
 
 1. Abstract
-2. Container layer and it's data on docker host machine
-3. What are the flaws of storing data in containe layer?
+2. Container layer and its data on docker host machine
+3. What are the flaws of storing data in the container layer?
 4. What is the solution?
 5. Using docker volume
 6. Conclusion
 
 ## Abstract
 
-Docker container is an independent process comprising the application and its dependencies. Container has its own processes, file system and networks independent of the host machine. 
+A Docker container is an independent process comprising the application and its dependencies. Container has its processes, file system, and networks independent of the host machine. 
 
-Creating a resource in the running container stores that resource in Read-Write layer or Container layer. This is a temporary storage mechanism. It is accessible until the container is running. Once the container is removed, all the data goes.
+Creating a resource in the running container stores that resource in the Read-Write layer or Container layer. This is a temporary storage mechanism. It is accessible until the container is running. Once the container is removed, all the data goes.
 
-Docker provides few mechanisms to tackle this problem and volume is one of them. Let's dig deeper into docker volumes.
+Docker provides a few mechanisms to tackle this problem and volume is one of them. Let's dig deeper into docker volumes.
 
-> Note: All the examples are being done by using `minikube` for running docker daemon. Any mention to docker host machine refers to `minikube` node (You can go inside minikube node using, `minikube ssh`).
+> Note: All the examples are being done by using `minikube` for running docker daemon. Any mention of docker host machine refers to `minikube` node (You can go inside minikube node using, `minikube ssh`).
 
 ## Container Layer
 
-I have explained about **container layer** in my previous post on Docker at [Docker Image Layers](/tech/docker/docker-image-layers). In this section, we would be seeing where actually container layer is stored on the docker host machine. Excited? Seems like yes 😄. Let's start.
+I have explained about **container layer** in my previous post on Docker at [Docker Image Layers](/tech/docker/docker-image-layers). In this section, we would be seeing where actually the container layer is stored on the docker host machine. Excited? Seems like yes 😄. Let's start.
 
 ### Where does the container layer reside?
 
-Container layer is a read-write layer stacked on top of read-only image layers. We can't modify read-only filesystem of read-only image layers. We can modify contents in the file system of container layer.
+Container layer is a read-write layer stacked on top of read-only image layers. We can't modify read-only filesystem of read-only image layers. We can modify the contents in the file system of the container layer.
 
 Let's spin up an `alpine` container with `sh` command.
 ```shell
 docker run --rm -it alpine sh
 ```
 
-Creating a file as,
+Creating a file as
 ```
 / # echo "Docker is awesome - Nitin" > testimonials.txt
 / # ls
@@ -49,7 +51,7 @@ etc               media             proc              sbin              testimon
 
 Now, let's see where this data is stored on the docker host machine.
 
-Inspecting above of ID `385f23abffa3` gives following,
+Inspecting the above container of ID `385f23abffa3` gives the following
 
 ```shell
 $ docker inspect --format '{{ .GraphDriver.Data }}' 385f23abffa3
@@ -59,26 +61,26 @@ $
 
 Woo! It gives a map with a bunch of paths. Let me example you each of these paths. The following descriptions are based on `overlay2` storage driver.
 
-1. `LowerDir` is the read-only file system for lower image layers. Any changes made to the file system are reflected to new file system of read-write container layer. `LowerDir` acts as a base file system.
+1. `LowerDir` is the read-only file system for lower image layers. Any changes made to the file system are reflected in the new file system of the read-write container layer. `LowerDir` acts as a base file system.
 2. `UpperDir` is the read-write file system for the container layer where we can create and delete files and directories. Container layer changes are stored in this location. 
-3. `MergedDir` is the merge of `LowerDir` and `UpperDir`. It gives the unified view of the file system for the container.
+3. `MergedDir` is the merge of `LowerDir` and `UpperDir`. It gives a unified view of the file system for the container.
 4. `WorkDir` is something `overlay2` driver uses for its internal operations such as copy-on-write process.
 
-As you can see `LowerDir` has to paths separated with `:`.
+As you can see `LowerDir` has two paths separated by `:`.
 
-First one is the path of lower image layer read-only file system.
+First one is the path of the lower image layer read-only file system.
 
 ```
 /var/lib/docker/overlay2/7cb62392ec2ace2c1ea07bbdee8c4976105f4f081531a29b7c5a0320aa5ae032-init/diff
 ```
 
-Second one is the path of lower image layer read-only file system after changes made by previous running containers.
+Second one is the path of the lower image layer read-only file system after changes made by previous running containers.
 
 ```
 /var/lib/docker/overlay2/71129bf0c1fb93d386d1abd9390e68eb08b64e65cb31186a0e710931359adb72/diff
 ```
 
-These two directories serve as base read-only file system for container layer read-write file system.
+These two directories serve as a base read-only file system for the container layer read-write file system.
 
 As we create a new file `testimonials.txt` in the container, let's peek into `UpperDir` to see this new file. Remember, this is on the docker host machine.
 
@@ -110,7 +112,7 @@ etc               media             proc              sbin              testimon
 ```
 However, we didn't see these directories on `UpperDir`. Guess why?
 
-The reason it, `UpperDir` only has the changes made to container file system. This is where `MergedDir` comes into existence which provides the unified view of the file system. `MergedDir` is the merge of `LowerDir` and `UpperDir` to give a unified file system.
+The reason is, `UpperDir` only has the changes made to the container file system. This is where `MergedDir` comes into existence which provides a unified view of the file system. `MergedDir` is the merge of `LowerDir` and `UpperDir` to give a unified file system.
 
 Let's see what is inside `MergedDir`.
 
@@ -121,35 +123,35 @@ dev  home  media  opt  root  sbin  sys  tmp               var
 $
 ```
 
-As we can see it is same as file system of the container. You can go ahead and try creating file in this location and see if it turns up in the container.
+As we can see it is the same as the file system of the container. You can go ahead and try creating files in this location and see if it turns up in the container.
 
-## The Flaws of storing data in container layer
+## The Flaws of storing data in the container layer
 
-1. First thing first, storing data in container layer is not permanent. Once you delete the container, all the data stored goes away.
+1. First thing first, storing data in the container layer is not permanent. Once you delete the container, all the data stored goes away.
 
-2. `storage-driver` is getting used to deal with file system on the container. Using container file system for IO intensive application it always not a good idea. It causes performance issues and increases latency when accessing files stored on a container file system.
+2. `storage-driver` is getting used to dealing with the file system on the container. Using container file system for an IO-intensive application is always not a good idea. It causes performance issues and increases latency when accessing files stored on a container file system.
 
-3. Container size gets increase when we start to store files on container file system. I would give the example of a use case. Sometimes we get the need to create an image from the container itself. And if we have huge amount of data inside the container, the resulting image would be big.
+3. Container size gets increase when we start to store files on the container file system. I would give the example of a use case. Sometimes we get the need to create an image from the container itself. And if we have a huge amount of data inside the container, the resulting image would be big.
 
-4. Sharing of data across container is hard as it is highly coupled with the container itself. 
+4. Sharing of data across containers is hard as it is highly coupled with the container itself. 
 
-These are the problems we are considered here. There may by different other problems.
+These are the problems we are considering here. There may be different other problems.
 
 Then what is the solution, huh?
 
 ## Solution - Using Docker volume
 
-Volume is not the only solution. It is one the solutions docker provides. Some other solutions are `bind mound`, `tmpfs` etc. 
+Volume is not the only solution. It is one of the solutions docker provides. Some other solutions are `bind mound`, `tmpfs` etc. 
 
-### What is Docker Volume ?
+### What is Docker Volume?
 
-This is the way of storing and managing persistent data outside of container file system. It is stored on host file system managed by Docker. These volumes can be shared across different containers. 
+This is the way of storing and managing persistent data outside of container file system. It is stored on a host file system managed by Docker. These volumes can be shared across different containers. 
 
 Cool, Huh?
 
 ### Let's create a volume
 
-Volumes are not tied with containers. So, we can create and manage volumes without even touching containers.
+Volumes are not tied to containers. So, we can create and manage volumes without even touching containers.
 
 `docker volume` command is used to manage volumes.
 
@@ -172,7 +174,7 @@ $
 ```
 
 
-Let's create a volume of name `bitphile`,  😁.
+Let's create a volume of the name `bitphile`,  😁.
 ```shell
 $ docker volume create bitphile
 bitphile
@@ -199,7 +201,7 @@ $ docker volume inspect bitphile
 $
 ```
 
-`Mountpoint` is where this volume is mounted. That is, location on the host machine where volume data will be stored.
+`Mountpoint` is where this volume is mounted. That is the location on the host machine where volume data will be stored.
 
 Let's peek inside that location and see what's there.
 ```shell
@@ -213,11 +215,11 @@ $
 NOTHING? Well, we just created it 😂!
 
 ### Mount Volume to container
-There are two methods of mounting volume to container. 
+There are two methods of mounting volume to the container. 
 1. `--mount` option
 2. `-v` option
 
-`-v` option is like shorthand. `--mount` is verbose and explicit, that is why we going to use `--mount` throughout this post. 
+`-v` option is like shorthand. `--mount` is verbose and explicit, which is why we going to use `--mount` throughout this post. 
 
 Let's create a container and mount it to this volume we have just created.
 
@@ -227,11 +229,11 @@ $ docker run --rm -it --mount type=volume,source=bitphile,target=/bitphile-vol a
 ```
 
 `--mount` option takes parameters are `key=value` pairs separated by `,`.
-- `type` specifies the `volume` as types. `--mount` is being used by `bind mounts`, and `tmpfs`  also. By default, `type` is `volume`. But for the sake of being explicit, I have used it.
+- `type` specifies the `volume` as type. `--mount` is being used by `bind mounts`, and `tmpfs`  also. By default, `type` is `volume`. But for the sake of being explicit, I have used it.
 - `source` is the volume name.
-- `target` is the path in the container file system will be mounted with the volume. There are alias of this option as `dest`, `destination` etc.
+- `target` is the path in the container file system that will be mounted with the volume. There is alias of this option as `dest`, `destination` etc.
 
-Listing contents in container file system `root` we see,
+Listing contents in the container file system `root` we see,
 ```
 / # ls
 bin           home          opt           sbin          usr
@@ -252,7 +254,7 @@ Good morning
 / #
 ```
 
-Peeking on the volume mount location on host machine, we see,
+Peeking on the volume mount location on the host machine, we see,
 
 ```shell
 $ sudo ls -la /var/lib/docker/volumes/bitphile/_data
@@ -265,9 +267,9 @@ $
 
 Cool! We have `greetings.txt`.
 
-### Mount same volume to another container
+### Mount the same volume to another container
 
-Let's spin up a new container with same volume.
+Let's spin up a new container with the same volume.
 
 ```shell
 $ docker run --name bitphile-second -it --mount source=bitphile,target=/bit-vol alpine sh
@@ -292,8 +294,8 @@ Nice.
 
 ## Conclusion
 
-Finally we are at the end (the most happy moment when zoom meeting ends 😂). 
-So, docker volumes are used as one of the methods to store data permanently. There are some other methods of doing the same. We will have look on those some time later. 
+Finally, we are at the end (the happiest moment when the zoom meeting ends 😂). 
+So, docker volumes are used as one of the methods to store data permanently. There are some other methods of doing the same. We will have look at those sometime later. 
 
 Until then,
 
