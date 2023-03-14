@@ -1,10 +1,12 @@
 ---
 title: "Getting Started With Docker"
 date: 2023-02-26T11:53:43+05:30
+tags: ["docker", "infra", "kubernetes", "docker image", "container", "containerisation", "containerization"]
+author: "Nitin"
 draft: false
 ---
 
-![Dockerfile-build-docker-image-docker-container](https://miro.medium.com/max/1400/1*vb_5008Zbt_pHj7qx44p0Q.png "Dockerfile to docker image to docker container")
+![Dockerfile-build-docker-image-docker-container](/tech/docker/getting-started-with-docker-banner.png "Dockerfile to docker image to docker container")
 
 # Introduction
 
@@ -42,7 +44,7 @@ Docker is a containerization tool that is used to create and run containers. The
 
 Docker uses client-server architecture where the docker client talks with the docker daemon which can run on either a host machine, a virtual machine, or a machine on the cloud. Docker clients can connect to multiple daemons.
 
-![https://docs.docker.com/engine/images/architecture.svg](https://docs.docker.com/engine/images/architecture.svg)
+![https://docs.docker.com/engine/images/architecture.svg](/tech/docker/docker-architecture.svg "Docker architecture")
 Source: https://docs.docker.com/engine/images/architecture.svg
 
 ### Docker client

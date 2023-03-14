@@ -2,9 +2,10 @@
 title: "Docker Image Layers"
 date: 2023-03-05T13:00:22+05:30
 draft: false
+author: Nitin
 ---
 
-![Docker-image-layers](/tech/docker/docker-image-layers.png "Docker Image Layers")
+![Docker-image-layers](/tech/docker/docker-image-layers-banner.png "Docker Image Layers Banner")
 
 # Deep dive into Docker Image Layers
 
@@ -47,7 +48,7 @@ A docker image is made up of several docker image layers. Each of the commands i
 
 The following image shows the docker image layers having ID and their corresponding parent layer ID.
 
-![Docker-image-layers](/tech/docker/docker-image-layers.png)
+![Docker-image-layers](/tech/docker/docker-image-layers.png "Docker image layers")
 
 > Note: Each of the layers coming on top of the existing one depends on their parent layer. Changing the sequence may altogether change the final image. Caching of image layers also depends upon this (upcoming sections).
 
@@ -60,7 +61,7 @@ Your concern is right. We can create files in the docker container. The reason b
 
 When an image is turned into a container, a new thin layer is stacked on top of the layers. This thin layer is called **container layer**. This image layer has both Read and Write access. All other image layers beneath this can only be read.
 
-![thin-container-layer](/tech/docker/container-layer.jpeg)
+![thin-container-layer](/tech/docker/container-layer.jpeg "Container Layer")
 Source: https://docs.docker.com/storage/storagedriver/images/container-layers.jpg
 
 ## Why does knowing Image Layers matter?
@@ -233,7 +234,7 @@ got `11B` of `size`.
 
 So, this is it for now. It's great that you come reading till here. I will see you in my next post on docker. Till then, 
 
-![Bye by Mr Bean](/bye-mr-bean.gif)
+![Bye by Mr Bean](/bye-mr-bean.gif "Bye bye, see you on next post")
 
 
 

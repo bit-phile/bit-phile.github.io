@@ -2,9 +2,10 @@
 title: "Docker Volume"
 date: 2023-03-12T10:38:56+05:30
 draft: false
+author: Nitin
 ---
 
-![Docker volume](/tech/docker/docker-volume.png)
+![Docker volume](/tech/docker/docker-volume.png "Docker Volume")
 
 # Understanding Docker Volume Thoroughly
 
@@ -299,7 +300,7 @@ So, docker volumes are used as one of the methods to store data permanently. The
 
 Until then,
 
-![Bye by Mr Bean](/bye-mr-bean.gif)
+![Bye by Mr Bean](/bye-mr-bean.gif "Bye bye, see you on next post")
 
 ## References
 1. [Docker Volumes](https://docs.docker.com/storage/volumes)
