@@ -1,7 +1,8 @@
 ---
 title: "Getting Started With Docker"
 date: 2023-02-26T11:53:43+05:30
-tags: ["docker", "infra", "kubernetes", "docker image", "container", "containerisation", "containerization"]
+lastmod: "2023-03-18"
+tags: ["docker", "infra", "kubernetes", "container", "containerisation", "containerization"]
 author: "Nitin"
 draft: false
 ---

@@ -3,6 +3,7 @@ title: "Docker Volume"
 date: 2023-03-12T10:38:56+05:30
 draft: false
 author: Nitin
+tags: ["docker", "infra", "kubernetes", "docker volume", "volume", "storage", "bind mounts", "tmpfs"]
 ---
 
 ![Docker volume](/tech/docker/docker-volume.png "Docker Volume")

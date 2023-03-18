@@ -3,6 +3,7 @@ title: "Docker Image Layers"
 date: 2023-03-05T13:00:22+05:30
 draft: false
 author: Nitin
+tags: ["docker", "infra", "kubernetes", "docker image", "image layers", "image"]
 ---
 
 ![Docker-image-layers](/tech/docker/docker-image-layers-banner.png "Docker Image Layers Banner")

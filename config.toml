@@ -2,3 +2,4 @@ baseURL = "https://bit-phile.github.io/"
 languageCode = 'en-us'
 title = 'bitPhile'
 theme = "PaperMod"
+googleAnalytics = 'gJLtPY-9n93JySFcqJqqBbytVUMKY7nTN5ZTvTmOfjY'
