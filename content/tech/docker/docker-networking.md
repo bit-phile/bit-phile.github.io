@@ -4,7 +4,6 @@ date: 2023-03-18T12:36:44+05:30
 draft: false
 author: Nitin
 tags: ["docker", "networking", "ports", "bridge", "routintg", "routing mesh", "overlay"]
-description: "Docker networking is used for the communication among containers."
 ---
 
 ![Docker networking - How does it work?](/tech/docker/docker-networking-banner.png)
