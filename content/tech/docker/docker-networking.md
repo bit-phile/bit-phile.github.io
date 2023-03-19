@@ -4,6 +4,7 @@ date: 2023-03-18T12:36:44+05:30
 draft: false
 author: Nitin
 tags: ["docker", "networking", "ports", "bridge", "routintg", "routing mesh", "overlay"]
+description: "Docker networking is used for the communication among containers."
 ---
 
 ![Docker networking - How does it work?](/tech/docker/docker-networking-banner.png)
@@ -320,6 +321,10 @@ Until then,
 
 ![Bye by Mr Bean](/bye-mr-bean.gif "Bye bye, see you on next post")
 
+## References
+1. [Networking overview](https://docs.docker.com/network/)
+2. [Container networking](https://docs.docker.com/config/containers/container-networking/)
+3. [Docker bridge networking](https://docs.docker.com/network/bridge/#disconnect-a-container-from-a-user-defined-bridge)
 
 [📨Mail to me](mailto:nitin123narayan123@gmail.com)
 
