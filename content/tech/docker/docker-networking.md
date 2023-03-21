@@ -20,7 +20,7 @@ Hello folks! Good to see you again on our journey of Docker. In this post, we wo
 
 ## Abstract
 
-Docker has been a powerful tool for creating and managing independent applications and services. These services are interacting with each other through specified interfaces. However, the isolated environment of docker stymies that interaction. An isolated environment hinders services communications by request-response mechanism as they have different network namespaces.
+Docker has been a powerful tool for creating and managing independent applications and services. These services are interacting with each other through specified interfaces. However, the isolated environment of docker stymies that interaction. An isolated environment hinders services request-response communications as they have different network namespaces.
 
 To solve this problem, docker introduced the concept of networking. Docker Networking.
 
