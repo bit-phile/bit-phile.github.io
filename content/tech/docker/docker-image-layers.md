@@ -1,16 +1,17 @@
 ---
-title: "Docker Image Layers"
+title: 'Docker Image Layers'
 date: 2023-03-05T13:00:22+05:30
 draft: false
 author: Nitin
-tags: ["docker", "infra", "kubernetes", "docker image", "image layers", "image"]
+tags: ['docker', 'infra', 'kubernetes', 'docker image', 'image layers', 'image']
+comments: true
 ---
 
-![Docker-image-layers](/tech/docker/docker-image-layers-banner.png "Docker Image Layers Banner")
+![Docker-image-layers](/tech/docker/docker-image-layers-banner.png 'Docker Image Layers Banner')
 
 # Deep dive into Docker Image Layers
 
-In my previous post [Getting started with docker](/tech/docker/getting-started-with-docker), I explained the basics of docker. In this post,  we will be deep diving into docker image layers. We will be covering the following topics in this post,
+In my previous post [Getting started with docker](/tech/docker/getting-started-with-docker), I explained the basics of docker. In this post, we will be deep diving into docker image layers. We will be covering the following topics in this post,
 
 1. What are docker image layers?
 2. Why does knowing docker image layers matter?
@@ -42,19 +43,20 @@ Successfully built 4d85107b2c59
 Successfully tagged bitphile/test-image:latest
 ```
 
-A docker image is made up of several docker image layers. Each of the commands in `Dockerfile` stacks up a new image layer on top of the previous one. 
+A docker image is made up of several docker image layers. Each of the commands in `Dockerfile` stacks up a new image layer on top of the previous one.
 
 > Note: Commands in `Dockerfile` are those instructions which do some changes in the file system. Any change made in the file system creates a new image layer. So, commands are responsible for the creation of a new image layer.
 > For example, `COPY`, `RUN`, etc are commands.
 
 The following image shows the docker image layers having ID and their corresponding parent layer ID.
 
-![Docker-image-layers](/tech/docker/docker-image-layers.png "Docker image layers")
+![Docker-image-layers](/tech/docker/docker-image-layers.png 'Docker image layers')
 
 > Note: Each of the layers coming on top of the existing one depends on their parent layer. Changing the sequence may altogether change the final image. Caching of image layers also depends upon this (upcoming sections).
 
 ### R/W image layers
-An image layer can be read-only or read and write. All the intermediate image layers are read-only. One can't create a file in any of those layers. If anyone of you has worked on docker must be thinking, `bitPhile` is saying wrong as we can create files in running docker container. 
+
+An image layer can be read-only or read and write. All the intermediate image layers are read-only. One can't create a file in any of those layers. If anyone of you has worked on docker must be thinking, `bitPhile` is saying wrong as we can create files in running docker container.
 
 Your concern is right. We can create files in the docker container. The reason behind this is `Container Layer` which is explained in the next section.
 
@@ -62,18 +64,21 @@ Your concern is right. We can create files in the docker container. The reason b
 
 When an image is turned into a container, a new thin layer is stacked on top of the layers. This thin layer is called **container layer**. This image layer has both Read and Write access. All other image layers beneath this can only be read.
 
-![thin-container-layer](/tech/docker/container-layer.jpeg "Container Layer")
+![thin-container-layer](/tech/docker/container-layer.jpeg 'Container Layer')
 Source: https://docs.docker.com/storage/storagedriver/images/container-layers.jpg
 
 ## Why does knowing Image Layers matter?
-There are several reasons why one should know about docker image layers. A few of them are described below. 
+
+There are several reasons why one should know about docker image layers. A few of them are described below.
 
 ### Image Size
-An image is a pack of all dependencies, libraries, and src code required for an application. These images are stored on cloud registries and shared across devices. Size becomes a foremost requirement for an image. 
+
+An image is a pack of all dependencies, libraries, and src code required for an application. These images are stored on cloud registries and shared across devices. Size becomes a foremost requirement for an image.
 
 Image layers size consititute into the size of the final image. Identifying which layer is adding more size can help the developer to find areas of concern.
 
 ### Layers are Cached
+
 Image layers are stored on the host machine for future builds. This helps build docker images faster.
 
 Let's see an example. Consider two Dockerfiles, `Dockerfile.new-1` and `Dockerfile.new-2`.
@@ -122,6 +127,7 @@ Successfully tagged bitphile/my-new-image:latest
 ```
 
 The second, it shows,
+
 ```shell
 Sending build context to Docker daemon  8.192kB
 Step 1/2 : FROM bitphile/my-base-image
@@ -138,6 +144,7 @@ We can see it uses caches for the second build. This increases the speed of buil
 > Note: If any instruction changes, caches are not used for the next instructions. New image layers are created for them from the scratch. Why does this happen? Think about it!
 
 ## Seeing Image Layers
+
 Once the final image is built, we can see intermediary image layers by,
 
 ```shell
@@ -151,23 +158,25 @@ docker history bitphile/my-new-image
 ```
 
 Gives the output,
+
 ```shell
 IMAGE          CREATED          CREATED BY                                      SIZE      COMMENT
-4d85107b2c59   50 minutes ago   /bin/sh -c #(nop)  ENTRYPOINT ["./app.sh"]      0B        
-8e758ee45de3   50 minutes ago   /bin/sh -c chmod +x app.sh                      33B       
-198fdf85c15b   50 minutes ago   /bin/sh -c #(nop) COPY file:1179990b720068e4…   33B       
-da7260331379   2 hours ago      /bin/sh -c apk add --no-cache bash              2.24MB    
-b2aa39c304c2   3 weeks ago      /bin/sh -c #(nop)  CMD ["/bin/sh"]              0B        
-<missing>      3 weeks ago      /bin/sh -c #(nop) ADD file:40887ab7c06977737…   7.05MB    
+4d85107b2c59   50 minutes ago   /bin/sh -c #(nop)  ENTRYPOINT ["./app.sh"]      0B
+8e758ee45de3   50 minutes ago   /bin/sh -c chmod +x app.sh                      33B
+198fdf85c15b   50 minutes ago   /bin/sh -c #(nop) COPY file:1179990b720068e4…   33B
+da7260331379   2 hours ago      /bin/sh -c apk add --no-cache bash              2.24MB
+b2aa39c304c2   3 weeks ago      /bin/sh -c #(nop)  CMD ["/bin/sh"]              0B
+<missing>      3 weeks ago      /bin/sh -c #(nop) ADD file:40887ab7c06977737…   7.05MB
 
 ```
 
-This shows the intermediate image ID, Dockerfile instruction, and size. 
+This shows the intermediate image ID, Dockerfile instruction, and size.
 
 > Note: `<missing>` indicates that a particular image is built on a different machine or using [`builtKit`](https://docs.docker.com/build/buildkit/) docker builder.
 
 ### Image Layers on Machine
-We can find these image layers on the host machine at location `/var/lib/docker`. If you are using a virtual machine to run a docker daemon, ssh into that machine and access this location. 
+
+We can find these image layers on the host machine at location `/var/lib/docker`. If you are using a virtual machine to run a docker daemon, ssh into that machine and access this location.
 
 Listing the contents of `/var/lib/docker` gives,
 
@@ -206,12 +215,14 @@ As you can see `da7260331379` is used as a cache to build the image.
 
 ## Docker Container Size
 
-There are two things, `size` and `virtual size`. 
-* `size` is the size of `container layer`. It comprises of all the files that are written `container layer`. 
-- `virtual size` is the sum of `size` and data of read-only intermediate image layers. If two containers have the same read-only intermediate image layers, will share the same data with separate `container layer`  data.
+There are two things, `size` and `virtual size`.
 
+- `size` is the size of `container layer`. It comprises of all the files that are written `container layer`.
 
-For example, 
+* `virtual size` is the sum of `size` and data of read-only intermediate image layers. If two containers have the same read-only intermediate image layers, will share the same data with separate `container layer` data.
+
+For example,
+
 ```shell
 CONTAINER ID   IMAGE                                          COMMAND                  CREATED         STATUS                   PORTS                  NAMES                                                                                                         SIZE
 7937d5f33e6e   bitphile/my-new-image-2                        "./app.sh"               5 seconds ago   Up 5 seconds                                    bitphile-test-container                                                                                       0B (virtual 9.29MB)
@@ -226,6 +237,7 @@ docker exec 7937d5f33e6e sh -c "echo hello world > file.txt"
 ```
 
 Now if we see the same container,
+
 ```shell
 CONTAINER ID   IMAGE                                          COMMAND                  CREATED          STATUS                   PORTS                  NAMES                                                                                                         SIZE
 7937d5f33e6e   bitphile/my-new-image-2                        "./app.sh"               39 seconds ago   Up 39 seconds                                   bitphile-test-container                                                                                       11B (virtual 9.29MB)
@@ -233,12 +245,10 @@ CONTAINER ID   IMAGE                                          COMMAND           
 
 got `11B` of `size`.
 
-So, this is it for now. It's great that you come reading till here. I will see you in my next post on docker. Till then, 
+So, this is it for now. It's great that you come reading till here. I will see you in my next post on docker. Till then,
 
-![Bye by Mr Bean](/bye-mr-bean.gif "Bye bye, see you on next post")
-
-
+![Bye by Mr Bean](/bye-mr-bean.gif 'Bye bye, see you on next post')
 
 ## References
-1. [Storage Drivers ](https://docs.docker.com/storage/storagedriver/#the-copy-on-write-cow-strategy)
 
+1. [Storage Drivers ](https://docs.docker.com/storage/storagedriver/#the-copy-on-write-cow-strategy)

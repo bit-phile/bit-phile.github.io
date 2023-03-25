@@ -1,15 +1,26 @@
 ---
-title: "Docker Networking - How does it work?"
+title: 'Docker Networking - How does it work?'
 date: 2023-03-18T12:36:44+05:30
 draft: false
 author: Nitin
-tags: ["docker", "networking", "ports", "bridge", "routintg", "routing mesh", "overlay"]
+tags:
+  [
+    'docker',
+    'networking',
+    'ports',
+    'bridge',
+    'routintg',
+    'routing mesh',
+    'overlay',
+  ]
+comments: true
 ---
 
 ![Docker networking - How does it work?](/tech/docker/docker-networking-banner.png)
 Hello folks! Good to see you again on our journey of Docker. In this post, we would be learning about docker networking. So, let's get started.
 
 ## What is covered?
+
 1. Abstract
 2. Problem Statement
 3. How does Docker Network solve the problem?
@@ -32,18 +43,18 @@ For example, consider a chat application `feeberchat` (I created this app a long
 
 As both `A` and `B` have different network namespaces, they can't communicate.
 
-![Docker with no networking](/tech/docker/docker-with-no-networking.png "Docker with no networking for containers A and B")
+![Docker with no networking](/tech/docker/docker-with-no-networking.png 'Docker with no networking for containers A and B')
 
 ## How does Docker Networking solve the problem?
 
-Docker networking allows to create isolated networks for containers to communicate with each other. It creates a common networking namespace where containers reside and communicate. 
+Docker networking allows to create isolated networks for containers to communicate with each other. It creates a common networking namespace where containers reside and communicate.
 
-![Docker with networking](/tech/docker/docker-with-networking.png "Docker with networking for containers A and B")
-
+![Docker with networking](/tech/docker/docker-with-networking.png 'Docker with networking for containers A and B')
 
 ## An example
 
 Assume we have a node (express) application running on port `3000`, dockerized with endpoints:
+
 1. `/`
 2. `/health`
 
@@ -59,7 +70,7 @@ Let's try to access it from another container.
 ⟩ docker run -it --rm --name alpine-shell alpine:latest sh       (base)
 ```
 
-It opens up the container. Now we have to send a request to container `express-app`. What is the endpoint? We don't know as `express-app` is running without any network. Docker didn't assign any IP address to `express-app` container. 
+It opens up the container. Now we have to send a request to container `express-app`. What is the endpoint? We don't know as `express-app` is running without any network. Docker didn't assign any IP address to `express-app` container.
 
 Now, let's run `express-app` again differently
 
@@ -87,7 +98,6 @@ Inspecting network details of `express-app` gives
     "DriverOpts": null
   }
 }
-
 ```
 
 It bombarded us with a bunch of details. Let's not worry about the rest of the details and take `IPAddress` into consideration. `IPAdderss` is the IP address of container `express-app` in the `default bridge` network (coming in the following sections. Just assume it is as a networking type).
@@ -99,11 +109,11 @@ $ curl 172.17.0.3:3000/health
 This is healthy $
 ```
 
-Great! We got some results. 
+Great! We got some results.
 
 ### What did happen?
 
-When we run `express-app` container without specifying `--network` flag, it creates a virtual network (which is called `default bridge` network). Docker assigns an ip address from that virtual network to the container. That's why we could see `IPAddress`  in docker inspect. 
+When we run `express-app` container without specifying `--network` flag, it creates a virtual network (which is called `default bridge` network). Docker assigns an ip address from that virtual network to the container. That's why we could see `IPAddress` in docker inspect.
 
 If you try running `express-app` with `--network none` flag and inspect the container, you wouldn't be seeing any network information.
 
@@ -123,7 +133,7 @@ Each of these drivers has different capabilities. Select a driver best suits you
 
 ## Bridge Networks
 
-Aligning ourselves with the name, we can think of a bridge as something that connects segments. In networking, it is a Link Layer device that connects network segments. 
+Aligning ourselves with the name, we can think of a bridge as something that connects segments. In networking, it is a Link Layer device that connects network segments.
 
 In docker, bridge networks connect containers in a network where they can communicate easily while allowing isolation from the rest of the containers not connected to the same bridge network.
 
@@ -148,6 +158,7 @@ Look `bridge` network of the driver `bridge`. This is the default bridge network
 ### User-defined Bridge Network
 
 We can also create a network of driver `bridge`. This has a few advantages over `default bridge` network:
+
 1. The most important, user-defined bridge network provides **automatic DNS resolution between containers**. It means, we can directly use container names to send requests instead of IP addresses.
 2. User has total control over the configurations on the network.
 3. Only containers with this network type can communicate.
@@ -157,6 +168,7 @@ We can also create a network of driver `bridge`. This has a few advantages over 
 #### Creating a network
 
 Following is the command used to create a docker network
+
 ```shell
 docker network create [options] <name>
 ```
@@ -175,42 +187,44 @@ NETWORK ID     NAME       DRIVER    SCOPE
 ```
 
 By default, it creates a network of driver type `bridge`. We can specify the driver using `--driver` flag.
+
 ```shell
 ⟩ docker network create --driver macvlan bitphile                               (base)
 237a35cfa290dd59db70b099cf970efd5efbd29f150ae65c7add51632d704a81
 ```
 
 Inspecting the network details gives us
+
 ```json
 [
-    {
-        "Name": "bitphile",
-        "Id": "2bfb26180adc42445ca0127f8628d45b71f1871b8b3fdea2a7d3da8b31e9dd17",
-        "Created": "2023-03-19T09:42:37.48139717Z",
-        "Scope": "local",
-        "Driver": "bridge",
-        "EnableIPv6": false,
-        "IPAM": {
-            "Driver": "default",
-            "Options": {},
-            "Config": [
-                {
-                    "Subnet": "172.20.0.0/16",
-                    "Gateway": "172.20.0.1"
-                }
-            ]
-        },
-        "Internal": false,
-        "Attachable": false,
-        "Ingress": false,
-        "ConfigFrom": {
-            "Network": ""
-        },
-        "ConfigOnly": false,
-        "Containers": {},
-        "Options": {},
-        "Labels": {}
-    }
+  {
+    "Name": "bitphile",
+    "Id": "2bfb26180adc42445ca0127f8628d45b71f1871b8b3fdea2a7d3da8b31e9dd17",
+    "Created": "2023-03-19T09:42:37.48139717Z",
+    "Scope": "local",
+    "Driver": "bridge",
+    "EnableIPv6": false,
+    "IPAM": {
+      "Driver": "default",
+      "Options": {},
+      "Config": [
+        {
+          "Subnet": "172.20.0.0/16",
+          "Gateway": "172.20.0.1"
+        }
+      ]
+    },
+    "Internal": false,
+    "Attachable": false,
+    "Ingress": false,
+    "ConfigFrom": {
+      "Network": ""
+    },
+    "ConfigOnly": false,
+    "Containers": {},
+    "Options": {},
+    "Labels": {}
+  }
 ]
 ```
 
@@ -225,52 +239,52 @@ If we inspect the network `bitphile` again, we would see a list of containers us
 
 ```json
 [
-    {
-        "Name": "bitphile",
-        "Id": "56b7da97479a3a27859e2c62b5a9f84b8389b5b3d5b41b40283b56a40e88d1a6",
-        "Created": "2023-03-19T09:46:13.74404902Z",
-        "Scope": "local",
-        "Driver": "bridge",
-        "EnableIPv6": false,
-        "IPAM": {
-            "Driver": "default",
-            "Options": {},
-            "Config": [
-                {
-                    "Subnet": "172.22.0.0/16",
-                    "Gateway": "172.22.0.1"
-                }
-            ]
-        },
-        "Internal": false,
-        "Attachable": false,
-        "Ingress": false,
-        "ConfigFrom": {
-            "Network": ""
-        },
-        "ConfigOnly": false,
-        "Containers": {
-            "70ae390032cbf2e1e38e749895cf17533c70021168a457480a3dd57f035296fe": {
-                "Name": "express-app",
-                "EndpointID": "0fda9ef2aa92e5966320c330776986c9cea15210354d2994e3060522619a5290",
-                "MacAddress": "02:42:ac:16:00:02",
-                "IPv4Address": "172.22.0.2/16",
-                "IPv6Address": ""
-            }
-        },
-        "Options": {},
-        "Labels": {}
-    }
+  {
+    "Name": "bitphile",
+    "Id": "56b7da97479a3a27859e2c62b5a9f84b8389b5b3d5b41b40283b56a40e88d1a6",
+    "Created": "2023-03-19T09:46:13.74404902Z",
+    "Scope": "local",
+    "Driver": "bridge",
+    "EnableIPv6": false,
+    "IPAM": {
+      "Driver": "default",
+      "Options": {},
+      "Config": [
+        {
+          "Subnet": "172.22.0.0/16",
+          "Gateway": "172.22.0.1"
+        }
+      ]
+    },
+    "Internal": false,
+    "Attachable": false,
+    "Ingress": false,
+    "ConfigFrom": {
+      "Network": ""
+    },
+    "ConfigOnly": false,
+    "Containers": {
+      "70ae390032cbf2e1e38e749895cf17533c70021168a457480a3dd57f035296fe": {
+        "Name": "express-app",
+        "EndpointID": "0fda9ef2aa92e5966320c330776986c9cea15210354d2994e3060522619a5290",
+        "MacAddress": "02:42:ac:16:00:02",
+        "IPv4Address": "172.22.0.2/16",
+        "IPv6Address": ""
+      }
+    },
+    "Options": {},
+    "Labels": {}
+  }
 ]
 ```
 
 #### Quick introduction to subnet and gateway
 
-This won't be thorough. It would just be for understanding networking in the context of docker. 
+This won't be thorough. It would just be for understanding networking in the context of docker.
 
 ##### Subnet
 
-It is used to divide the larger network into the smaller network to make network management easy. For example, subnet `172.22.0.0/16`  means the first `16 bites` will be used for networks, and the rest of `16 bits` will be used for hosts in the sub-network.
+It is used to divide the larger network into the smaller network to make network management easy. For example, subnet `172.22.0.0/16` means the first `16 bites` will be used for networks, and the rest of `16 bits` will be used for hosts in the sub-network.
 
 ```plain text
 
@@ -283,9 +297,9 @@ In the context of docker, the subnet makes sure that the network interface has a
 
 ##### Gateway
 
-As the name suggests, it is the entry point (and exit point) of a network segment. 
+As the name suggests, it is the entry point (and exit point) of a network segment.
 
-In the context of docker, we have gateway `172.22.0.1` which is an entry point for network `bitphile`. 
+In the context of docker, we have gateway `172.22.0.1` which is an entry point for network `bitphile`.
 
 #### Specifying subnet and gateway
 
@@ -311,19 +325,18 @@ We can delete the network using
 bitphile
 ```
 
-
 ## Conclusion
 
-Finally, we are at the home stretch of this post. Hope you found this useful and you got something important out of this. Please reach out to me if you have any feedback. I have given my mail below. See you at the next junction of our journey on docker. 
+Finally, we are at the home stretch of this post. Hope you found this useful and you got something important out of this. Please reach out to me if you have any feedback. I have given my mail below. See you at the next junction of our journey on docker.
 
 Until then,
 
-![Bye by Mr Bean](/bye-mr-bean.gif "Bye bye, see you on next post")
+![Bye by Mr Bean](/bye-mr-bean.gif 'Bye bye, see you on next post')
 
 ## References
+
 1. [Networking overview](https://docs.docker.com/network/)
 2. [Container networking](https://docs.docker.com/config/containers/container-networking/)
 3. [Docker bridge networking](https://docs.docker.com/network/bridge/#disconnect-a-container-from-a-user-defined-bridge)
 
 [📨Mail to me](mailto:nitin123narayan123@gmail.com)
-

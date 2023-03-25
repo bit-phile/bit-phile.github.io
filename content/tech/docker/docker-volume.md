@@ -1,12 +1,23 @@
 ---
-title: "Docker Volume"
+title: 'Docker Volume'
 date: 2023-03-12T10:38:56+05:30
 draft: false
 author: Nitin
-tags: ["docker", "infra", "kubernetes", "docker volume", "volume", "storage", "bind mounts", "tmpfs"]
+tags:
+  [
+    'docker',
+    'infra',
+    'kubernetes',
+    'docker volume',
+    'volume',
+    'storage',
+    'bind mounts',
+    'tmpfs',
+  ]
+comments: true
 ---
 
-![Docker volume](/tech/docker/docker-volume.png "Docker Volume")
+![Docker volume](/tech/docker/docker-volume.png 'Docker Volume')
 
 # Understanding Docker Volume Thoroughly
 
@@ -21,7 +32,7 @@ tags: ["docker", "infra", "kubernetes", "docker volume", "volume", "storage", "b
 
 ## Abstract
 
-A Docker container is an independent process comprising the application and its dependencies. Container has its processes, file system, and networks independent of the host machine. 
+A Docker container is an independent process comprising the application and its dependencies. Container has its processes, file system, and networks independent of the host machine.
 
 Creating a resource in the running container stores that resource in the Read-Write layer or Container layer. This is a temporary storage mechanism. It is accessible until the container is running. Once the container is removed, all the data goes.
 
@@ -38,11 +49,13 @@ I have explained about **container layer** in my previous post on Docker at [Doc
 Container layer is a read-write layer stacked on top of read-only image layers. We can't modify read-only filesystem of read-only image layers. We can modify the contents in the file system of the container layer.
 
 Let's spin up an `alpine` container with `sh` command.
+
 ```shell
 docker run --rm -it alpine sh
 ```
 
 Creating a file as
+
 ```
 / # echo "Docker is awesome - Nitin" > testimonials.txt
 / # ls
@@ -64,7 +77,7 @@ $
 Woo! It gives a map with a bunch of paths. Let me example you each of these paths. The following descriptions are based on `overlay2` storage driver.
 
 1. `LowerDir` is the read-only file system for lower image layers. Any changes made to the file system are reflected in the new file system of the read-write container layer. `LowerDir` acts as a base file system.
-2. `UpperDir` is the read-write file system for the container layer where we can create and delete files and directories. Container layer changes are stored in this location. 
+2. `UpperDir` is the read-write file system for the container layer where we can create and delete files and directories. Container layer changes are stored in this location.
 3. `MergedDir` is the merge of `LowerDir` and `UpperDir`. It gives a unified view of the file system for the container.
 4. `WorkDir` is something `overlay2` driver uses for its internal operations such as copy-on-write process.
 
@@ -106,12 +119,14 @@ Docker is awesome - Nitin
 ```
 
 Great. If you have noticed when we do `ls` inside the container, it gives more directories like,
+
 ```shell
 $:/ ls
 bin               home              mnt               root              srv               tmp
 dev               lib               opt               run               sys               usr
 etc               media             proc              sbin              testimonials.txt  var
 ```
+
 However, we didn't see these directories on `UpperDir`. Guess why?
 
 The reason is, `UpperDir` only has the changes made to the container file system. This is where `MergedDir` comes into existence which provides a unified view of the file system. `MergedDir` is the merge of `LowerDir` and `UpperDir` to give a unified file system.
@@ -135,7 +150,7 @@ As we can see it is the same as the file system of the container. You can go ahe
 
 3. Container size gets increase when we start to store files on the container file system. I would give the example of a use case. Sometimes we get the need to create an image from the container itself. And if we have a huge amount of data inside the container, the resulting image would be big.
 
-4. Sharing of data across containers is hard as it is highly coupled with the container itself. 
+4. Sharing of data across containers is hard as it is highly coupled with the container itself.
 
 These are the problems we are considering here. There may be different other problems.
 
@@ -143,11 +158,11 @@ Then what is the solution, huh?
 
 ## Solution - Using Docker volume
 
-Volume is not the only solution. It is one of the solutions docker provides. Some other solutions are `bind mound`, `tmpfs` etc. 
+Volume is not the only solution. It is one of the solutions docker provides. Some other solutions are `bind mound`, `tmpfs` etc.
 
 ### What is Docker Volume?
 
-This is the way of storing and managing persistent data outside of container file system. It is stored on a host file system managed by Docker. These volumes can be shared across different containers. 
+This is the way of storing and managing persistent data outside of container file system. It is stored on a host file system managed by Docker. These volumes can be shared across different containers.
 
 Cool, Huh?
 
@@ -175,8 +190,8 @@ Run 'docker volume COMMAND --help' for more information on a command.
 $
 ```
 
+Let's create a volume of the name `bitphile`, 😁.
 
-Let's create a volume of the name `bitphile`,  😁.
 ```shell
 $ docker volume create bitphile
 bitphile
@@ -187,6 +202,7 @@ $
 ```
 
 Inspecting this volume gives us,
+
 ```shell
 $ docker volume inspect bitphile
 [
@@ -206,6 +222,7 @@ $
 `Mountpoint` is where this volume is mounted. That is the location on the host machine where volume data will be stored.
 
 Let's peek inside that location and see what's there.
+
 ```shell
 $ sudo ls -la /var/lib/docker/volumes/bitphile/_data
 total 8
@@ -217,11 +234,13 @@ $
 NOTHING? Well, we just created it 😂!
 
 ### Mount Volume to container
-There are two methods of mounting volume to the container. 
+
+There are two methods of mounting volume to the container.
+
 1. `--mount` option
 2. `-v` option
 
-`-v` option is like shorthand. `--mount` is verbose and explicit, which is why we going to use `--mount` throughout this post. 
+`-v` option is like shorthand. `--mount` is verbose and explicit, which is why we going to use `--mount` throughout this post.
 
 Let's create a container and mount it to this volume we have just created.
 
@@ -231,11 +250,13 @@ $ docker run --rm -it --mount type=volume,source=bitphile,target=/bitphile-vol a
 ```
 
 `--mount` option takes parameters are `key=value` pairs separated by `,`.
-- `type` specifies the `volume` as type. `--mount` is being used by `bind mounts`, and `tmpfs`  also. By default, `type` is `volume`. But for the sake of being explicit, I have used it.
+
+- `type` specifies the `volume` as type. `--mount` is being used by `bind mounts`, and `tmpfs` also. By default, `type` is `volume`. But for the sake of being explicit, I have used it.
 - `source` is the volume name.
 - `target` is the path in the container file system that will be mounted with the volume. There is alias of this option as `dest`, `destination` etc.
 
 Listing contents in the container file system `root` we see,
+
 ```
 / # ls
 bin           home          opt           sbin          usr
@@ -296,12 +317,13 @@ Nice.
 
 ## Conclusion
 
-Finally, we are at the end (the happiest moment when the zoom meeting ends 😂). 
-So, docker volumes are used as one of the methods to store data permanently. There are some other methods of doing the same. We will have look at those sometime later. 
+Finally, we are at the end (the happiest moment when the zoom meeting ends 😂).
+So, docker volumes are used as one of the methods to store data permanently. There are some other methods of doing the same. We will have look at those sometime later.
 
 Until then,
 
-![Bye by Mr Bean](/bye-mr-bean.gif "Bye bye, see you on next post")
+![Bye by Mr Bean](/bye-mr-bean.gif 'Bye bye, see you on next post')
 
 ## References
+
 1. [Docker Volumes](https://docs.docker.com/storage/volumes)
