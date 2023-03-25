@@ -1,0 +1,35 @@
+<div id="commentor">
+</div>
+<script>
+  const embedCommentorJs = () => new Promise((res, rej) => {
+    const scriptTag = document.createElement('script');
+    scriptTag.setAttribute('defer', true);
+    scriptTag.src = '/commentor/commentor.js';
+
+    scriptTag.onload = res;
+    scriptTag.onerror = rej;
+
+    document.head.appendChild(scriptTag);
+  });
+
+  const embedCommentorStyles = () => new Promise((res, rej) => {
+    const styleTag = document.createElement('link');
+    styleTag.setAttribute('rel', 'stylesheet');
+    styleTag.href = '/commentor/commentor.css';
+
+    styleTag.onload = res;
+    styleTag.onerror = rej;
+
+    document.head.appendChild(styleTag);
+  });
+
+  const getPageId = () => {
+    return window.location.href.split('/').slice(-2).join('')
+  };
+
+  embedCommentorJs().then(() => embedCommentorStyles()).then(() => {
+    if (Commentor) {
+      Commentor.init('Comments', getPageId());
+    }
+  }).catch(err => console.error('Commentor not loaded', err));
+</script>
