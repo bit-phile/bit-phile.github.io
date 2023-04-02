@@ -2,43 +2,28 @@
 title: "Docker Compose Todo App"
 date: 2023-04-02T12:36:36+05:30
 draft: false
-tags: ["docker compose", "compose", "microservices", "networks"]
+tags: ["docker compose", "docker-compose", "compose", "microservices", "networks"]
 author: 'Nitin'
 comments: true
 ---
 
+![Docker compose ToDo app](/tech/docker/docker-compose-todo-app-banner.png "Docker compose ToDo app banner")
 
-
-plan
-1. setup the application
-2. Introduce the agenda of this post
-3. Agenda
-	1. Setting up the project
-	2. Create docker file for backend
-	3. Create docker file for frontend
-	4. Create compose file
-	5. Spin up the compose
-	6. Introduce deploys
-		1. replicas
-		2. restart
-	7. Conclusion
-
-
-Greetings, esteemed readers! It is an absolute pleasure to see you all here. I trust that each one of you is in the pink of health and high spirits. In this post, we are going to containerise our todo application using docker compose. Each of the services in our todo app will run in its own container. So, let's get started!
+Greetings, esteemed readers! It is an absolute pleasure to see you all here. I trust that each one of you is in the pink of health and high spirits. In this post, we are going to containerize our todo application using docker compose. If you want to learn about docker compose, refer my post on [Docker Compose](/tech/docker/docker-compose). Let's hit the road!
 
 ## What is there to Cover?
 
-We will be covering following sections in here.
+We will be covering the following sections here.
 
 1. Setting up the project
-2. Create `Dockerfile` for backend
-3. Create `Dockerfile` for frontend
-4. Create docker compose
+2. Create `Dockerfile` for the backend
+3. Create `Dockerfile` for the frontend
+4. Create a docker compose
 5. Spin up the compose
 6. An introduction to deploys
 7. Conclusion
 
-Let's follow through each one of these sections.
+Let's follow through with each one of these sections.
 
 
 ## Setting up the application
@@ -47,7 +32,7 @@ Let's follow through each one of these sections.
 - node
 - npm
 - mysql
-- and docker ofcourse
+- and docker of course
 
 Create your sandbox directory where you would be writing the code. Clone the following project in your sandbox.
 
@@ -107,7 +92,7 @@ Install dependencies in each of those directories.
 ⟩ npm install
 ```
 
-Now, start both backend and frontend.
+Now, start both the backend and frontend.
 
 ```shell
 frontend
@@ -117,17 +102,17 @@ backend
 ⟩ npm start
 ```
 
-> Facing issues with mysql db? Please make sure it is running. Also, provide environment variables, `DB_USER` and `DB_PASSWORD` while running the backend.
+> Facing issues with MySQL db? Please make sure it is running. Also, provide environment variables, `DB_USER` and `DB_PASSWORD` while running the backend.
 
-Open `localhost:3000`, you should see an ugly page without css. Let's not worry about the styling of the page.
+Open `localhost:3000`, and you should see an ugly page without CSS. Let's not worry about the styling of the page.
 
 ![todo app screen shot](/tech/docker/todo-screen-shot.png "Todo app screenshot")
 
-You should be able to add a todo.
+You should be able to add a to-do.
 
-## Create `Dockerfile` for backend
+## Create `Dockerfile` for the backend
 
-Let's write `Dockerfile` for backend.
+Let's write `Dockerfile` for the backend.
 
 ```Dockerfile
 FROM node:12-alpine
@@ -153,7 +138,7 @@ Now, build the image.
 ⟩ docker build -t bitphile/todo-backend .
 ```
 
-Let's trying running the image we've just built.
+Let's try running the image we've just built.
 
 ```shell
 ⟩ docker run -d --name todo-backend -p 3001:3001 bitphile/todo-backend
@@ -182,7 +167,7 @@ Seeing the logs of the container,
 
 ```
 
-🤯 We are bombarded with error. If we see it, it is crying because of mysql connection. Our container is not able to connect to mysql server. And this is valid. We will look at it later when we compose our application. For now, let's move ahead.
+🤯 We are bombarded with an error. If we see it, it is crying because of the MySQL connection. Our container is not able to connect to the MySQL server. And this is straightforward as no MySQL container is running in the network. We will look at it later when we compose our application. For now, let's move ahead.
 
 ## Create `Dockerfile` for frontend
 
@@ -211,6 +196,8 @@ COPY --from=builder /app/build .
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
 ```
+
+> Option `daemon off` specifies nginx to run in the foreground so that the container will continue running. If we don't specify this option, the nginx service would run in the background and the container will stop running as there is nothing to hold it up.
 
 Let's build the image.
 
@@ -321,11 +308,11 @@ Let's run the image.
 ⟩ docker run -d --name todo-frontend -p 4000:80 bitphile/todo-frontend
 ```
 
-Now, if we open `http://localhost:4000`, we should the todo page.
+Now, if we open `http://localhost:4000`, we should the to-do page.
 
 ## Create Docker Compose file
 
-It is the time to take the whole picture of our application. To run our application with all those services, we have to create a `docker-compose.yml` file. Let's do create one.
+It is time to take the whole picture of our application. To run our application with all those services, we have to create a `docker-compose.yml` file. Let's do create one.
 
 ```yml
 version: '3.7'
@@ -346,7 +333,7 @@ services:
     container_name: todo-server
     build: ./backend
     ports:
-      - 3000:3000
+      - 3001:3001
     networks:
       - todo-app
     environment:
@@ -425,7 +412,7 @@ Great! Containers seemed to be started. Let's see,
 NAME                COMMAND                  SERVICE             STATUS              PORTS
 mysql-server        "docker-entrypoint.s…"   mysql               running             3306/tcp, 33060/tcp
 todo-frontend       "nginx -g 'daemon of…"   todo-frontend       running             0.0.0.0:4000->80/tcp
-todo-server         "docker-entrypoint.s…"   todo-backend        running             0.0.0.0:3000->3000/tcp, 3001/tcp
+todo-server         "docker-entrypoint.s…"   todo-backend        running             0.0.0.0:3001->3001/tcp, 3001/tcp
 
 ```
 
@@ -484,14 +471,13 @@ networks:
   todo-app:
 ```
 
-So, this would create two replicas of the service `todo-backend`. The routing of which container should the request be sent would be taken care of by the docker itself.
+So, this would create two replicas of the service `todo-backend`. The routing of which container the request should be sent to would be taken care of by the docker itself.
 
 ### Restart policy
 
-If the container dies unexpectedly, docker compose can restart the container. Docker compose provide restart policy for the same that we can defined in docker compose file.
+If the container dies unexpectedly, docker compose can restart the container. Docker compose provides a restart policy for the same that we can define in docker compose file.
 
 ```yml
-
 version: '3.7'
 name: todo-app
 
@@ -500,7 +486,7 @@ services:
     container_name: todo-server
     build: ./backend
     ports:
-      - 3000:3000
+      - 3001:3001
     networks:
       - todo-app
     environment:
