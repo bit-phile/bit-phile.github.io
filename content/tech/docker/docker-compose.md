@@ -5,9 +5,11 @@ draft: false
 tags: ["docker", "docker-compose", "docker compose", "compose", "services", "management", "orchestration"]
 author: 'Nitin'
 comments: true
+ShowToc: true
+cover:
+  image: /tech/docker/docker-compose-banner.png
+  alt: Docker Compose Banner
 ---
-
-![Docker Compose Banner](/tech/docker/docker-compose-banner.png "Docker Compose Banner")
 
 Hello people! Good to see you here. Today we would be learning about docker compose, what is it, why we need it, and its examples. Let's begin.
 

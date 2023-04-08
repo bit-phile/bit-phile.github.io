@@ -14,9 +14,11 @@ tags:
 author: 'Nitin'
 draft: false
 comments: true
+ShowToc: true
+cover:
+  image: /tech/docker/getting-started-with-docker-banner.png
+  alt: Dockerfile to docker image to docker container
 ---
-
-![Dockerfile-build-docker-image-docker-container](/tech/docker/getting-started-with-docker-banner.png 'Dockerfile to docker image to docker container')
 
 # Introduction
 

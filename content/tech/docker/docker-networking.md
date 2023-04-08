@@ -14,9 +14,12 @@ tags:
     'overlay',
   ]
 comments: true
+ShowToc: true
+cover:
+  image: /tech/docker/docker-networking-banner.png
+  alt: Docker Networking Banner
 ---
 
-![Docker networking - How does it work?](/tech/docker/docker-networking-banner.png)
 Hello folks! Good to see you again on our journey of Docker. In this post, we would be learning about docker networking. So, let's get started.
 
 ## What is covered?

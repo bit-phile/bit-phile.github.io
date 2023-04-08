@@ -5,9 +5,12 @@ draft: false
 tags: ["docker compose", "docker-compose", "compose", "microservices", "networks"]
 author: 'Nitin'
 comments: true
+ShowToc: true
+cover:
+  image: /tech/docker/docker-compose-todo-app-banner.png
+  alt: Docker compose ToDo app banner
 ---
 
-![Docker compose ToDo app](/tech/docker/docker-compose-todo-app-banner.png "Docker compose ToDo app banner")
 
 Greetings, esteemed readers! It is an absolute pleasure to see you all here. I trust that each one of you is in the pink of health and high spirits. In this post, we are going to containerize our todo application using docker compose. If you want to learn about docker compose, refer my post on [Docker Compose](/tech/docker/docker-compose). Let's hit the road!
 

@@ -5,9 +5,11 @@ draft: false
 author: Nitin
 tags: ['docker', 'infra', 'kubernetes', 'docker image', 'image layers', 'image']
 comments: true
+ShowToc: true
+cover:
+  image: /tech/docker/docker-image-layers-banner.png
+  alt: Docker Image Layers Banner
 ---
-
-![Docker-image-layers](/tech/docker/docker-image-layers-banner.png 'Docker Image Layers Banner')
 
 # Deep dive into Docker Image Layers
 

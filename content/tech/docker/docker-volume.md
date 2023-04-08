@@ -15,9 +15,11 @@ tags:
     'tmpfs',
   ]
 comments: true
+ShowToc: true
+cover:
+  image: /tech/docker/docker-volume.png
+  alt: Docker Volume Banner
 ---
-
-![Docker volume](/tech/docker/docker-volume.png 'Docker Volume')
 
 # Understanding Docker Volume Thoroughly
 
