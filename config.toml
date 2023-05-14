@@ -1,5 +1,10 @@
-baseURL = "https://bit-phile.github.io/"
+baseURL = "https://bitphile.me"
 languageCode = 'en-us'
 title = 'bitPhile'
 theme = "PaperMod"
 googleAnalytics = 'gJLtPY-9n93JySFcqJqqBbytVUMKY7nTN5ZTvTmOfjY'
+
+[[socialIcons]]
+name = "github"
+url = "https://github.com/nitinsharmacs"
+
