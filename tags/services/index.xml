@@ -1,2 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>services on bitPhile</title><link>https://nitinsharmacs.github.io/tags/services/</link><description>Recent content in services on bitPhile</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 26 Mar 2023 08:59:38 +0530</lastBuildDate><atom:link href="https://nitinsharmacs.github.io/tags/services/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction to Docker Compose</title><link>https://nitinsharmacs.github.io/tech/docker/docker-compose/</link><pubDate>Sun, 26 Mar 2023 08:59:38 +0530</pubDate><guid>https://nitinsharmacs.github.io/tech/docker/docker-compose/</guid><description>Hello people! Good to see you here. Today we would be learning about docker compose, what is it, why we need it, and its examples. Let&amp;rsquo;s begin.
-Agenda Current Scenario What is docker-compose? How does docker compose change the current scenario? Defining Services Volume and Bind mounts Networking Environment Variables Conclusion Current Scenario A single application comprises containers for different services responsible for their respective tasks. For example, a backend service, a database service to manage data, a frontend for the app, and so on.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Services on bitPhile</title><link>https://nitinsharmacs.github.io/tags/services/</link><description>Recent content in Services on bitPhile</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 26 Mar 2023 08:59:38 +0530</lastBuildDate><atom:link href="https://nitinsharmacs.github.io/tags/services/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction to Docker Compose</title><link>https://nitinsharmacs.github.io/tech/docker/docker-compose/</link><pubDate>Sun, 26 Mar 2023 08:59:38 +0530</pubDate><guid>https://nitinsharmacs.github.io/tech/docker/docker-compose/</guid><description>&lt;p>Hello people! Good to see you here. Today we would be learning about docker compose, what is it, why we need it, and its examples. Let&amp;rsquo;s begin.&lt;/p>
+&lt;h2 id="agenda">Agenda&lt;/h2>
+&lt;ol>
+&lt;li>Current Scenario&lt;/li>
+&lt;li>What is docker-compose?&lt;/li>
+&lt;li>How does docker compose change the current scenario?&lt;/li>
+&lt;li>Defining Services&lt;/li>
+&lt;li>Volume and Bind mounts&lt;/li>
+&lt;li>Networking&lt;/li>
+&lt;li>Environment Variables&lt;/li>
+&lt;li>Conclusion&lt;/li>
+&lt;/ol>
+&lt;h2 id="current-scenario">Current Scenario&lt;/h2>
+&lt;p>A single application comprises containers for different services responsible for their respective tasks. For example, a backend service, a database service to manage data, a frontend for the app, and so on. All of these services need to be in the same network to communicate with each other. I have explained docker networking in my post &lt;a href="https://nitinsharmacs.github.io/tech/docker/docker-networking">Docker Networking&lt;/a>.&lt;/p></description></item></channel></rss>

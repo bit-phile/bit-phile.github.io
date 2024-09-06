@@ -1,1 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>websocket on bitPhile</title><link>https://nitinsharmacs.github.io/tags/websocket/</link><description>Recent content in websocket on bitPhile</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 15 Aug 2023 13:49:50 +0530</lastBuildDate><atom:link href="https://nitinsharmacs.github.io/tags/websocket/index.xml" rel="self" type="application/rss+xml"/><item><title>Chat App in Scala Armeria</title><link>https://nitinsharmacs.github.io/tech/programming/scala/chat-app-in-scala-armeria/</link><pubDate>Tue, 15 Aug 2023 13:49:50 +0530</pubDate><guid>https://nitinsharmacs.github.io/tech/programming/scala/chat-app-in-scala-armeria/</guid><description>Contents Abstract What is Armeria and its features? Project details Project setup requirements Setting up Armeria and service handler Setting up the web socket handler Show example in the browser console Socket service for frontend Code snippet of the chat screen Working example Screenshots etc Conclusion Acknowledgements References Abstract As a part of E4R (Engineering for Research) retreat Hackathon, we explored Armeria and created a small PoC single group chat application using HTTP request polling and websockets.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Websocket on bitPhile</title><link>https://nitinsharmacs.github.io/tags/websocket/</link><description>Recent content in Websocket on bitPhile</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 15 Aug 2023 13:49:50 +0530</lastBuildDate><atom:link href="https://nitinsharmacs.github.io/tags/websocket/index.xml" rel="self" type="application/rss+xml"/><item><title>Chat App in Scala Armeria</title><link>https://nitinsharmacs.github.io/tech/programming/scala/chat-app-in-scala-armeria/</link><pubDate>Tue, 15 Aug 2023 13:49:50 +0530</pubDate><guid>https://nitinsharmacs.github.io/tech/programming/scala/chat-app-in-scala-armeria/</guid><description>&lt;h2 id="contents">Contents&lt;/h2>
+&lt;ol>
+&lt;li>Abstract&lt;/li>
+&lt;li>What is Armeria and its features?&lt;/li>
+&lt;li>Project details&lt;/li>
+&lt;li>Project setup requirements&lt;/li>
+&lt;li>Setting up Armeria and service handler&lt;/li>
+&lt;li>Setting up the web socket handler&lt;/li>
+&lt;li>Show example in the browser console&lt;/li>
+&lt;li>Socket service for frontend&lt;/li>
+&lt;li>Code snippet of the chat screen&lt;/li>
+&lt;li>Working example Screenshots etc&lt;/li>
+&lt;li>Conclusion&lt;/li>
+&lt;li>Acknowledgements&lt;/li>
+&lt;li>References&lt;/li>
+&lt;/ol>
+&lt;h2 id="abstract">Abstract&lt;/h2>
+&lt;p>As a part of &lt;a href="https://www.thoughtworks.com/en-in/clients/engineering-research">E4R&lt;/a> (Engineering for Research) retreat Hackathon, we explored Armeria and created a small PoC single group chat application using HTTP request polling and websockets. We are using the Armeria framework to develop one of the services in our project. So, it became the inspiration for the exploration.&lt;/p></description></item></channel></rss>

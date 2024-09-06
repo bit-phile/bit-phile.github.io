@@ -1,8 +1,68 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Teches on bitPhile</title><link>https://nitinsharmacs.github.io/tech/</link><description>Recent content in Teches on bitPhile</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 15 Aug 2023 13:49:50 +0530</lastBuildDate><atom:link href="https://nitinsharmacs.github.io/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>Chat App in Scala Armeria</title><link>https://nitinsharmacs.github.io/tech/programming/scala/chat-app-in-scala-armeria/</link><pubDate>Tue, 15 Aug 2023 13:49:50 +0530</pubDate><guid>https://nitinsharmacs.github.io/tech/programming/scala/chat-app-in-scala-armeria/</guid><description>Contents Abstract What is Armeria and its features? Project details Project setup requirements Setting up Armeria and service handler Setting up the web socket handler Show example in the browser console Socket service for frontend Code snippet of the chat screen Working example Screenshots etc Conclusion Acknowledgements References Abstract As a part of E4R (Engineering for Research) retreat Hackathon, we explored Armeria and created a small PoC single group chat application using HTTP request polling and websockets.</description></item><item><title>Docker Compose Todo App</title><link>https://nitinsharmacs.github.io/tech/docker/docker-compose-todo-app/</link><pubDate>Sun, 02 Apr 2023 12:36:36 +0530</pubDate><guid>https://nitinsharmacs.github.io/tech/docker/docker-compose-todo-app/</guid><description>Greetings, esteemed readers! It is an absolute pleasure to see you all here. I trust that each one of you is in the pink of health and high spirits. In this post, we are going to containerize our todo application using docker compose. If you want to learn about docker compose, refer my post on Docker Compose. Let&amp;rsquo;s hit the road!
-What is there to Cover? We will be covering the following sections here.</description></item><item><title>Introduction to Docker Compose</title><link>https://nitinsharmacs.github.io/tech/docker/docker-compose/</link><pubDate>Sun, 26 Mar 2023 08:59:38 +0530</pubDate><guid>https://nitinsharmacs.github.io/tech/docker/docker-compose/</guid><description>Hello people! Good to see you here. Today we would be learning about docker compose, what is it, why we need it, and its examples. Let&amp;rsquo;s begin.
-Agenda Current Scenario What is docker-compose? How does docker compose change the current scenario? Defining Services Volume and Bind mounts Networking Environment Variables Conclusion Current Scenario A single application comprises containers for different services responsible for their respective tasks. For example, a backend service, a database service to manage data, a frontend for the app, and so on.</description></item><item><title>Docker Networking - How does it work?</title><link>https://nitinsharmacs.github.io/tech/docker/docker-networking/</link><pubDate>Sat, 18 Mar 2023 12:36:44 +0530</pubDate><guid>https://nitinsharmacs.github.io/tech/docker/docker-networking/</guid><description>Hello folks! Good to see you again on our journey of Docker. In this post, we would be learning about docker networking. So, let&amp;rsquo;s get started.
-What is covered? Abstract Problem Statement How does Docker Network solve the problem? Simple example Types of networks based on drivers Diving deep into bridge networks Conclusion Abstract Docker has been a powerful tool for creating and managing independent applications and services. These services are interacting with each other through specified interfaces.</description></item><item><title>Docker Volume</title><link>https://nitinsharmacs.github.io/tech/docker/docker-volume/</link><pubDate>Sun, 12 Mar 2023 10:38:56 +0530</pubDate><guid>https://nitinsharmacs.github.io/tech/docker/docker-volume/</guid><description>Understanding Docker Volume Thoroughly Agenda Abstract Container layer and its data on docker host machine What are the flaws of storing data in the container layer? What is the solution? Using docker volume Conclusion Abstract A Docker container is an independent process comprising the application and its dependencies. Container has its processes, file system, and networks independent of the host machine.
-Creating a resource in the running container stores that resource in the Read-Write layer or Container layer.</description></item><item><title>Docker Image Layers</title><link>https://nitinsharmacs.github.io/tech/docker/docker-image-layers/</link><pubDate>Sun, 05 Mar 2023 13:00:22 +0530</pubDate><guid>https://nitinsharmacs.github.io/tech/docker/docker-image-layers/</guid><description>Deep dive into Docker Image Layers In my previous post Getting started with docker, I explained the basics of docker. In this post, we will be deep diving into docker image layers. We will be covering the following topics in this post,
-What are docker image layers? Why does knowing docker image layers matter? Where do these intermediary images reside and how to see them? What are the constituents of a docker container size?</description></item><item><title>Getting Started With Docker</title><link>https://nitinsharmacs.github.io/tech/docker/getting-started-with-docker/</link><pubDate>Sun, 26 Feb 2023 11:53:43 +0530</pubDate><guid>https://nitinsharmacs.github.io/tech/docker/getting-started-with-docker/</guid><description>Introduction Developing software and applications is getting more complex day by day. This introduces the complexity of running and deploying the applications in different machines or environments. It also includes making sure it works everywhere no matter what the architecture of the host machine is.
-Applications running in the same environment can conflict with other applications. This can cause malfunctions and make application development less effective.
-To solve this problem we need isolation and a virtual machine is one way to achieve this.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Teches on bitPhile</title><link>https://nitinsharmacs.github.io/tech/</link><description>Recent content in Teches on bitPhile</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 15 Aug 2023 13:49:50 +0530</lastBuildDate><atom:link href="https://nitinsharmacs.github.io/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>Chat App in Scala Armeria</title><link>https://nitinsharmacs.github.io/tech/programming/scala/chat-app-in-scala-armeria/</link><pubDate>Tue, 15 Aug 2023 13:49:50 +0530</pubDate><guid>https://nitinsharmacs.github.io/tech/programming/scala/chat-app-in-scala-armeria/</guid><description>&lt;h2 id="contents">Contents&lt;/h2>
+&lt;ol>
+&lt;li>Abstract&lt;/li>
+&lt;li>What is Armeria and its features?&lt;/li>
+&lt;li>Project details&lt;/li>
+&lt;li>Project setup requirements&lt;/li>
+&lt;li>Setting up Armeria and service handler&lt;/li>
+&lt;li>Setting up the web socket handler&lt;/li>
+&lt;li>Show example in the browser console&lt;/li>
+&lt;li>Socket service for frontend&lt;/li>
+&lt;li>Code snippet of the chat screen&lt;/li>
+&lt;li>Working example Screenshots etc&lt;/li>
+&lt;li>Conclusion&lt;/li>
+&lt;li>Acknowledgements&lt;/li>
+&lt;li>References&lt;/li>
+&lt;/ol>
+&lt;h2 id="abstract">Abstract&lt;/h2>
+&lt;p>As a part of &lt;a href="https://www.thoughtworks.com/en-in/clients/engineering-research">E4R&lt;/a> (Engineering for Research) retreat Hackathon, we explored Armeria and created a small PoC single group chat application using HTTP request polling and websockets. We are using the Armeria framework to develop one of the services in our project. So, it became the inspiration for the exploration.&lt;/p></description></item><item><title>Docker Compose Todo App</title><link>https://nitinsharmacs.github.io/tech/docker/docker-compose-todo-app/</link><pubDate>Sun, 02 Apr 2023 12:36:36 +0530</pubDate><guid>https://nitinsharmacs.github.io/tech/docker/docker-compose-todo-app/</guid><description>&lt;p>Greetings, esteemed readers! It is an absolute pleasure to see you all here. I trust that each one of you is in the pink of health and high spirits. In this post, we are going to containerize our todo application using docker compose. If you want to learn about docker compose, refer my post on &lt;a href="https://nitinsharmacs.github.io/tech/docker/docker-compose">Docker Compose&lt;/a>. Let&amp;rsquo;s hit the road!&lt;/p>
+&lt;h2 id="what-is-there-to-cover">What is there to Cover?&lt;/h2>
+&lt;p>We will be covering the following sections here.&lt;/p></description></item><item><title>Introduction to Docker Compose</title><link>https://nitinsharmacs.github.io/tech/docker/docker-compose/</link><pubDate>Sun, 26 Mar 2023 08:59:38 +0530</pubDate><guid>https://nitinsharmacs.github.io/tech/docker/docker-compose/</guid><description>&lt;p>Hello people! Good to see you here. Today we would be learning about docker compose, what is it, why we need it, and its examples. Let&amp;rsquo;s begin.&lt;/p>
+&lt;h2 id="agenda">Agenda&lt;/h2>
+&lt;ol>
+&lt;li>Current Scenario&lt;/li>
+&lt;li>What is docker-compose?&lt;/li>
+&lt;li>How does docker compose change the current scenario?&lt;/li>
+&lt;li>Defining Services&lt;/li>
+&lt;li>Volume and Bind mounts&lt;/li>
+&lt;li>Networking&lt;/li>
+&lt;li>Environment Variables&lt;/li>
+&lt;li>Conclusion&lt;/li>
+&lt;/ol>
+&lt;h2 id="current-scenario">Current Scenario&lt;/h2>
+&lt;p>A single application comprises containers for different services responsible for their respective tasks. For example, a backend service, a database service to manage data, a frontend for the app, and so on. All of these services need to be in the same network to communicate with each other. I have explained docker networking in my post &lt;a href="https://nitinsharmacs.github.io/tech/docker/docker-networking">Docker Networking&lt;/a>.&lt;/p></description></item><item><title>Docker Networking - How does it work?</title><link>https://nitinsharmacs.github.io/tech/docker/docker-networking/</link><pubDate>Sat, 18 Mar 2023 12:36:44 +0530</pubDate><guid>https://nitinsharmacs.github.io/tech/docker/docker-networking/</guid><description>&lt;p>Hello folks! Good to see you again on our journey of Docker. In this post, we would be learning about docker networking. So, let&amp;rsquo;s get started.&lt;/p>
+&lt;h2 id="what-is-covered">What is covered?&lt;/h2>
+&lt;ol>
+&lt;li>Abstract&lt;/li>
+&lt;li>Problem Statement&lt;/li>
+&lt;li>How does Docker Network solve the problem?&lt;/li>
+&lt;li>Simple example&lt;/li>
+&lt;li>Types of networks based on drivers&lt;/li>
+&lt;li>Diving deep into &lt;code>bridge&lt;/code> networks&lt;/li>
+&lt;li>Conclusion&lt;/li>
+&lt;/ol>
+&lt;h2 id="abstract">Abstract&lt;/h2>
+&lt;p>Docker has been a powerful tool for creating and managing independent applications and services. These services are interacting with each other through specified interfaces. However, the isolated environment of docker stymies that interaction. An isolated environment hinders services request-response communications as they have different network namespaces.&lt;/p></description></item><item><title>Docker Volume</title><link>https://nitinsharmacs.github.io/tech/docker/docker-volume/</link><pubDate>Sun, 12 Mar 2023 10:38:56 +0530</pubDate><guid>https://nitinsharmacs.github.io/tech/docker/docker-volume/</guid><description>&lt;h1 id="understanding-docker-volume-thoroughly">Understanding Docker Volume Thoroughly&lt;/h1>
+&lt;h2 id="agenda">Agenda&lt;/h2>
+&lt;ol>
+&lt;li>Abstract&lt;/li>
+&lt;li>Container layer and its data on docker host machine&lt;/li>
+&lt;li>What are the flaws of storing data in the container layer?&lt;/li>
+&lt;li>What is the solution?&lt;/li>
+&lt;li>Using docker volume&lt;/li>
+&lt;li>Conclusion&lt;/li>
+&lt;/ol>
+&lt;h2 id="abstract">Abstract&lt;/h2>
+&lt;p>A Docker container is an independent process comprising the application and its dependencies. Container has its processes, file system, and networks independent of the host machine.&lt;/p>
+&lt;p>Creating a resource in the running container stores that resource in the Read-Write layer or Container layer. This is a temporary storage mechanism. It is accessible until the container is running. Once the container is removed, all the data goes.&lt;/p></description></item><item><title>Docker Image Layers</title><link>https://nitinsharmacs.github.io/tech/docker/docker-image-layers/</link><pubDate>Sun, 05 Mar 2023 13:00:22 +0530</pubDate><guid>https://nitinsharmacs.github.io/tech/docker/docker-image-layers/</guid><description>&lt;h1 id="deep-dive-into-docker-image-layers">Deep dive into Docker Image Layers&lt;/h1>
+&lt;p>In my previous post &lt;a href="https://nitinsharmacs.github.io/tech/docker/getting-started-with-docker">Getting started with docker&lt;/a>, I explained the basics of docker. In this post, we will be deep diving into docker image layers. We will be covering the following topics in this post,&lt;/p>
+&lt;ol>
+&lt;li>What are docker image layers?&lt;/li>
+&lt;li>Why does knowing docker image layers matter?&lt;/li>
+&lt;li>Where do these intermediary images reside and how to see them?&lt;/li>
+&lt;li>What are the constituents of a docker container size?&lt;/li>
+&lt;/ol>
+&lt;p>Are you ready? Yes! So let&amp;rsquo;s start&amp;hellip;&lt;/p></description></item><item><title>Getting Started With Docker</title><link>https://nitinsharmacs.github.io/tech/docker/getting-started-with-docker/</link><pubDate>Sun, 26 Feb 2023 11:53:43 +0530</pubDate><guid>https://nitinsharmacs.github.io/tech/docker/getting-started-with-docker/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>Developing software and applications is getting more complex day by day. This introduces the complexity of running and deploying the applications in different machines or environments. It also includes making sure it works everywhere no matter what the architecture of the host machine is.&lt;/p>
+&lt;p>Applications running in the same environment can conflict with other applications. This can cause malfunctions and make application development less effective.&lt;/p>
+&lt;p>To solve this problem we need isolation and a virtual machine is one way to achieve this. We can have different virtual machines to run the applications that will be independent of other applications environments.&lt;/p></description></item></channel></rss>
