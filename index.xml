@@ -6,65 +6,65 @@
       <description>Last 10 notes on bitPhile</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>lambdas</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/lambdas</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/lambdas</guid>
-    <description><![CDATA[ To be added. ]]></description>
-    <pubDate>Sun, 05 Apr 2026 16:19:00 GMT</pubDate>
+    <title>How to use function templates with multiple files in C++?</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/function-templates-multi-files</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/function-templates-multi-files</guid>
+    <description><![CDATA[ Consider the following example that shows what comes into our mind if we want to use function templates with multiple files. ]]></description>
+    <pubDate>Mon, 13 Apr 2026 17:35:00 GMT</pubDate>
   </item><item>
-    <title>std::common-type in C++</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/common-type</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/common-type</guid>
-    <description><![CDATA[ std::common_type_t&lt;T..&gt; determines the common type from all give types within the angular brackets. ]]></description>
-    <pubDate>Sun, 05 Apr 2026 16:12:00 GMT</pubDate>
+    <title>Non-type template parameters in function templates</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/non-type-template-params</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/non-type-template-params</guid>
+    <description><![CDATA[ We have seen using type template parameters in function templates. ]]></description>
+    <pubDate>Mon, 13 Apr 2026 14:20:00 GMT</pubDate>
   </item><item>
-    <title>Trailing return type syntax for functions in C++</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/trailing-return-type-syntax</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/trailing-return-type-syntax</guid>
-    <description><![CDATA[ Trailing return type syntax is a function definition syntax where return type is specified at the end. We need to use auto keyword to use this syntax. ]]></description>
-    <pubDate>Sun, 05 Apr 2026 15:58:00 GMT</pubDate>
+    <title>Using function templates with multiple template types</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/multiple-template-types</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/multiple-template-types</guid>
+    <description><![CDATA[ Function templates allow us to provide multiple templates type as shown in below example. ]]></description>
+    <pubDate>Sun, 12 Apr 2026 16:04:00 GMT</pubDate>
   </item><item>
-    <title>Type deductions for functions in C++</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/function-type-deductions</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/function-type-deductions</guid>
-    <description><![CDATA[ We can use auto with function return type to let compiler to infer type from return value. ]]></description>
-    <pubDate>Sun, 05 Apr 2026 15:47:00 GMT</pubDate>
+    <title>Using function template</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/using-function-template</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/using-function-template</guid>
+    <description><![CDATA[ When the compiler sees the call made to a function which happens to be created from a function template, it instantiates the function from the template. ]]></description>
+    <pubDate>Sun, 12 Apr 2026 08:53:00 GMT</pubDate>
   </item><item>
-    <title>Type deductions of objects using auto keyword in C++</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/type-deductions-using-auto</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/type-deductions-using-auto</guid>
-    <description><![CDATA[ Type deduction, also called as type inference, is a feature used by compiler to determining object types from the object’s initializer. ]]></description>
-    <pubDate>Sun, 05 Apr 2026 09:10:00 GMT</pubDate>
+    <title>Templates in C++</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/templates</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/templates</guid>
+    <description><![CDATA[ Template is a feature of C++ where it provides us to define function (or class) without specifying types at that moment. ]]></description>
+    <pubDate>Thu, 09 Apr 2026 14:22:00 GMT</pubDate>
   </item><item>
-    <title>Creating type aliases in C++</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/type-alias</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/type-alias</guid>
-    <description><![CDATA[ C++ provides us using keyword to create type aliases to existing data types. ]]></description>
-    <pubDate>Sun, 05 Apr 2026 08:17:00 GMT</pubDate>
+    <title>Translation unit</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/translation-unit</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/translation-unit</guid>
+    <description><![CDATA[ A single source code file (.cpp) files is considered to be a translation unit. ]]></description>
+    <pubDate>Thu, 09 Apr 2026 14:09:00 GMT</pubDate>
   </item><item>
-    <title>Reproducing builds using Spack Environments</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/spack/reproducing-builds-with-environments</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/spack/reproducing-builds-with-environments</guid>
-    <description><![CDATA[ A spack environment contains two main components: spack.yaml: gives an abstract details of specs and other configurations. ]]></description>
-    <pubDate>Fri, 03 Apr 2026 09:08:00 GMT</pubDate>
+    <title>Default arguments for functions in C++</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/default-arguments</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/default-arguments</guid>
+    <description><![CDATA[ We define functions that take defaults arguments. Compiler handles default arguments during the call time. ]]></description>
+    <pubDate>Thu, 09 Apr 2026 10:57:00 GMT</pubDate>
   </item><item>
-    <title>Environment Views</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/spack/environment-views</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/spack/environment-views</guid>
-    <description><![CDATA[ An environment view is a directory structure mirroring a typical Linux root directory containing directories such as /bin, /usr, etc. ]]></description>
-    <pubDate>Thu, 02 Apr 2026 16:06:00 GMT</pubDate>
+    <title>Function templates in C++</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/function-templates</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/function-templates</guid>
+    <description><![CDATA[ Function templates are type agnostic function definitions which are used to create functions with actual types. ]]></description>
+    <pubDate>Tue, 07 Apr 2026 16:35:00 GMT</pubDate>
   </item><item>
-    <title>concretization</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/spack/concretization</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/spack/concretization</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Thu, 02 Apr 2026 15:45:00 GMT</pubDate>
+    <title>Deleting functions in C++</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/deleting-functions</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/deleting-functions</guid>
+    <description><![CDATA[ We can delete a function by using delete keyword as shown below. ]]></description>
+    <pubDate>Tue, 07 Apr 2026 16:12:00 GMT</pubDate>
   </item><item>
-    <title>Spack Environment</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/spack/spack-environment</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/spack/spack-environment</guid>
-    <description><![CDATA[ Spack Environment is a feature that allows us to group set of packages and easily use and manage them. ]]></description>
-    <pubDate>Thu, 02 Apr 2026 15:32:00 GMT</pubDate>
+    <title>user-defined-conversions</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/user-defined-conversions</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/user-defined-conversions</guid>
+    <description><![CDATA[ to be added. ]]></description>
+    <pubDate>Tue, 07 Apr 2026 09:17:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
