@@ -6,65 +6,65 @@
       <description>Last 10 notes on bitPhile</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>How to use function templates with multiple files in C++?</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/function-templates-multi-files</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/function-templates-multi-files</guid>
-    <description><![CDATA[ Consider the following example that shows what comes into our mind if we want to use function templates with multiple files. ]]></description>
-    <pubDate>Mon, 13 Apr 2026 17:35:00 GMT</pubDate>
+    <title>Returning optional results in C++</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/stdoptional</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/stdoptional</guid>
+    <description><![CDATA[ To return an optional result from a function, we can use std::optional class template as type (C++17) as shown below: #include &lt;iostream&gt; #include &lt;optional&gt; std::optional&lt;int&gt; getValue(bool shouldGet) { if (shouldGet) { return 5; } return {}; } int main(int argc, char const *argv[... ]]></description>
+    <pubDate>Tue, 12 May 2026 10:54:00 GMT</pubDate>
   </item><item>
-    <title>Non-type template parameters in function templates</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/non-type-template-params</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/non-type-template-params</guid>
-    <description><![CDATA[ We have seen using type template parameters in function templates. ]]></description>
-    <pubDate>Mon, 13 Apr 2026 14:20:00 GMT</pubDate>
+    <title>In and out parameters in C++</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/in-out-parameters</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/in-out-parameters</guid>
+    <description><![CDATA[ In parameter An in parameter is a parameter that function receives as input from the caller. ]]></description>
+    <pubDate>Fri, 08 May 2026 17:30:00 GMT</pubDate>
   </item><item>
-    <title>Using function templates with multiple template types</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/multiple-template-types</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/multiple-template-types</guid>
-    <description><![CDATA[ Function templates allow us to provide multiple templates type as shown in below example. ]]></description>
-    <pubDate>Sun, 12 Apr 2026 16:04:00 GMT</pubDate>
+    <title>Return by reference and address</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/return-by-reference-address</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/return-by-reference-address</guid>
+    <description><![CDATA[ Return by reference and address from function in c++ ]]></description>
+    <pubDate>Fri, 08 May 2026 14:21:00 GMT</pubDate>
   </item><item>
-    <title>Using function template</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/using-function-template</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/using-function-template</guid>
-    <description><![CDATA[ When the compiler sees the call made to a function which happens to be created from a function template, it instantiates the function from the template. ]]></description>
-    <pubDate>Sun, 12 Apr 2026 08:53:00 GMT</pubDate>
+    <title>Pass by reference vs pass by address</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/pass-by-reference-vs-address</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/pass-by-reference-vs-address</guid>
+    <description><![CDATA[ A comparison between passing arguments by references and by addresses. ]]></description>
+    <pubDate>Thu, 07 May 2026 14:19:00 GMT</pubDate>
   </item><item>
-    <title>Templates in C++</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/templates</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/templates</guid>
-    <description><![CDATA[ Template is a feature of C++ where it provides us to define function (or class) without specifying types at that moment. ]]></description>
-    <pubDate>Thu, 09 Apr 2026 14:22:00 GMT</pubDate>
+    <title>Pass arguments to function by address in C++</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/pass-by-address</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/pass-by-address</guid>
+    <description><![CDATA[ Similar to passing arguments by reference, we can also pass arguments by address. ]]></description>
+    <pubDate>Thu, 07 May 2026 13:59:00 GMT</pubDate>
   </item><item>
-    <title>Translation unit</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/translation-unit</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/translation-unit</guid>
-    <description><![CDATA[ A single source code file (.cpp) files is considered to be a translation unit. ]]></description>
-    <pubDate>Thu, 09 Apr 2026 14:09:00 GMT</pubDate>
+    <title>const pointer to const objects in C++</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/const-pointer-to-const</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/const-pointer-to-const</guid>
+    <description><![CDATA[ We can create const pointer that points to a const variable. ]]></description>
+    <pubDate>Tue, 05 May 2026 17:51:00 GMT</pubDate>
   </item><item>
-    <title>Default arguments for functions in C++</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/default-arguments</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/default-arguments</guid>
-    <description><![CDATA[ We define functions that take defaults arguments. Compiler handles default arguments during the call time. ]]></description>
-    <pubDate>Thu, 09 Apr 2026 10:57:00 GMT</pubDate>
+    <title>const pointers in C++</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/const-pointer</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/const-pointer</guid>
+    <description><![CDATA[ creating const pointers which can't be reassigned to another address. ]]></description>
+    <pubDate>Tue, 05 May 2026 17:46:00 GMT</pubDate>
   </item><item>
-    <title>Function templates in C++</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/function-templates</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/function-templates</guid>
-    <description><![CDATA[ Function templates are type agnostic function definitions which are used to create functions with actual types. ]]></description>
-    <pubDate>Tue, 07 Apr 2026 16:35:00 GMT</pubDate>
+    <title>Pointer to const value in C++</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/pointer-to-const</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/pointer-to-const</guid>
+    <description><![CDATA[ Pointer to const value can be created using const <type>* ]]></description>
+    <pubDate>Tue, 05 May 2026 17:33:00 GMT</pubDate>
   </item><item>
-    <title>Deleting functions in C++</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/deleting-functions</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/deleting-functions</guid>
-    <description><![CDATA[ We can delete a function by using delete keyword as shown below. ]]></description>
-    <pubDate>Tue, 07 Apr 2026 16:12:00 GMT</pubDate>
+    <title>Null pointers in C++</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/null-pointer</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/null-pointer</guid>
+    <description><![CDATA[ A null pointer is a pointer whose value is not an address of another object, but a null value. A null value is something that does not have any value. ]]></description>
+    <pubDate>Tue, 05 May 2026 15:38:00 GMT</pubDate>
   </item><item>
-    <title>user-defined-conversions</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/user-defined-conversions</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/user-defined-conversions</guid>
-    <description><![CDATA[ to be added. ]]></description>
-    <pubDate>Tue, 07 Apr 2026 09:17:00 GMT</pubDate>
+    <title>Pointer size in C++</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/pointer-size</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/pointer-size</guid>
+    <description><![CDATA[ What is a size of a pointer in C++? ]]></description>
+    <pubDate>Tue, 05 May 2026 13:15:00 GMT</pubDate>
   </item>
     </channel>
   </rss>

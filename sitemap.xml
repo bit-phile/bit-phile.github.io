@@ -380,11 +380,17 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/aws/email-notification-lambda</loc>
     <lastmod>2024-02-14T07:13:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/address-of-operator</loc>
+    <lastmod>2026-05-04T17:33:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/attributes</loc>
     <lastmod>2026-03-23T13:28:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/build-configurations</loc>
     <lastmod>2025-10-12T15:45:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/class</loc>
+    <lastmod>2026-04-22T14:15:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/common-type</loc>
     <lastmod>2026-04-05T16:12:00.000Z</lastmod>
@@ -404,8 +410,29 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/conditional-compilation</loc>
     <lastmod>2025-10-22T14:02:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/const-pointer-to-const</loc>
+    <lastmod>2026-05-05T17:51:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/const-pointer</loc>
+    <lastmod>2026-05-05T17:46:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/const-references</loc>
+    <lastmod>2026-04-22T08:51:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/constant-expressions</loc>
     <lastmod>2026-02-06T16:35:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/consteval</loc>
+    <lastmod>2026-04-17T12:07:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/constexpr-function-parameters</loc>
+    <lastmod>2026-04-14T17:22:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/constexpr-functions-in-non-constexpr-context</loc>
+    <lastmod>2026-04-14T16:52:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/constexpr-functions</loc>
+    <lastmod>2026-04-14T13:15:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/creating-namespaces</loc>
     <lastmod>2026-02-27T14:11:00.000Z</lastmod>
@@ -421,6 +448,9 @@
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/deleting-functions</loc>
     <lastmod>2026-04-07T16:12:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/dereferencing</loc>
+    <lastmod>2026-05-04T17:32:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/east-const</loc>
     <lastmod>2026-01-30T13:04:00.000Z</lastmod>
@@ -464,6 +494,9 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/implicit-type-conversion</loc>
     <lastmod>2026-03-28T08:31:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/in-out-parameters</loc>
+    <lastmod>2026-05-08T17:30:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/include-directive</loc>
     <lastmod>2025-10-22T13:48:00.000Z</lastmod>
   </url><url>
@@ -479,11 +512,23 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/io-manipulators</loc>
     <lastmod>2026-02-19T14:33:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/is-constant-evaluated-if-consteval</loc>
+    <lastmod>2026-04-17T11:46:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/lambdas</loc>
     <lastmod>2026-04-05T16:19:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/linkage</loc>
     <lastmod>2026-03-02T17:05:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/lvalue-references</loc>
+    <lastmod>2026-04-21T13:22:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/lvalue-rvalue</loc>
+    <lastmod>2026-04-21T05:52:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/move-semantic</loc>
+    <lastmod>2026-04-21T13:21:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/multiple-code-files</loc>
     <lastmod>2025-10-21T14:23:00.000Z</lastmod>
@@ -496,6 +541,9 @@
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/non-type-template-params</loc>
     <lastmod>2026-04-13T14:20:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/null-pointer</loc>
+    <lastmod>2026-05-05T15:38:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/numeric-conversions</loc>
     <lastmod>2026-03-30T13:56:00.000Z</lastmod>
@@ -512,6 +560,30 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/overload-resolution</loc>
     <lastmod>2026-04-07T09:00:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/pass-by-address</loc>
+    <lastmod>2026-05-07T13:59:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/pass-by-const-lvalue-reference</loc>
+    <lastmod>2026-04-22T14:23:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/pass-by-reference-vs-address</loc>
+    <lastmod>2026-05-07T14:19:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/pass-by-reference</loc>
+    <lastmod>2026-04-22T14:11:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/pass-by-value-vs-pass-by-reference</loc>
+    <lastmod>2026-04-24T08:21:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/pointer-size</loc>
+    <lastmod>2026-05-05T13:15:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/pointer-to-const</loc>
+    <lastmod>2026-05-05T17:33:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/pointers</loc>
+    <lastmod>2026-05-04T17:28:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/preprocessors</loc>
     <lastmod>2025-10-22T13:35:00.000Z</lastmod>
   </url><url>
@@ -521,8 +593,14 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/reading-input</loc>
     <lastmod>2025-10-11T14:26:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/return-by-reference-address</loc>
+    <lastmod>2026-05-08T14:21:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/size_t-type</loc>
     <lastmod>2026-01-30T14:09:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/smart-pointers</loc>
+    <lastmod>2026-05-05T13:13:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/static-keyword</loc>
     <lastmod>2026-03-09T09:51:00.000Z</lastmod>
@@ -532,6 +610,9 @@
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/std-getline</loc>
     <lastmod>2026-02-19T14:16:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/stdoptional</loc>
+    <lastmod>2026-05-12T10:54:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/storage-class-specifiers</loc>
     <lastmod>2026-03-05T17:22:00.000Z</lastmod>
@@ -556,6 +637,9 @@
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/templates</loc>
     <lastmod>2026-04-09T14:22:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/temporary-objects</loc>
+    <lastmod>2026-04-21T14:16:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/trailing-return-type-syntax</loc>
     <lastmod>2026-04-05T15:58:00.000Z</lastmod>
