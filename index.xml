@@ -6,65 +6,65 @@
       <description>Last 10 notes on bitPhile</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Returning optional results in C++</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/stdoptional</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/stdoptional</guid>
-    <description><![CDATA[ To return an optional result from a function, we can use std::optional class template as type (C++17) as shown below: #include &lt;iostream&gt; #include &lt;optional&gt; std::optional&lt;int&gt; getValue(bool shouldGet) { if (shouldGet) { return 5; } return {}; } int main(int argc, char const *argv[... ]]></description>
-    <pubDate>Tue, 12 May 2026 10:54:00 GMT</pubDate>
+    <title>Literal types</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/literal-types</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/literal-types</guid>
+    <description><![CDATA[ Literal types in C++. Literal types vs literals. ]]></description>
+    <pubDate>Thu, 04 Jun 2026 05:10:00 GMT</pubDate>
   </item><item>
-    <title>In and out parameters in C++</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/in-out-parameters</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/in-out-parameters</guid>
-    <description><![CDATA[ In parameter An in parameter is a parameter that function receives as input from the caller. ]]></description>
-    <pubDate>Fri, 08 May 2026 17:30:00 GMT</pubDate>
+    <title>Constexpr classes</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/constexpr-classes</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/constexpr-classes</guid>
+    <description><![CDATA[ creating and using constexpr classes. ]]></description>
+    <pubDate>Thu, 04 Jun 2026 04:52:00 GMT</pubDate>
   </item><item>
-    <title>Return by reference and address</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/return-by-reference-address</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/return-by-reference-address</guid>
-    <description><![CDATA[ Return by reference and address from function in c++ ]]></description>
-    <pubDate>Fri, 08 May 2026 14:21:00 GMT</pubDate>
+    <title>Constexpr struct aggregate</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/constexpr-struct-aggregate</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/constexpr-struct-aggregate</guid>
+    <description><![CDATA[ Using struct aggregate as constexpr ]]></description>
+    <pubDate>Wed, 03 Jun 2026 14:14:00 GMT</pubDate>
   </item><item>
-    <title>Pass by reference vs pass by address</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/pass-by-reference-vs-address</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/pass-by-reference-vs-address</guid>
-    <description><![CDATA[ A comparison between passing arguments by references and by addresses. ]]></description>
-    <pubDate>Thu, 07 May 2026 14:19:00 GMT</pubDate>
+    <title>move-constructors</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/move-constructors</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/move-constructors</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Wed, 03 Jun 2026 12:21:00 GMT</pubDate>
   </item><item>
-    <title>Pass arguments to function by address in C++</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/pass-by-address</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/pass-by-address</guid>
-    <description><![CDATA[ Similar to passing arguments by reference, we can also pass arguments by address. ]]></description>
-    <pubDate>Thu, 07 May 2026 13:59:00 GMT</pubDate>
+    <title>When to use explicit constructor?</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/when-to-use-explicit-constructor</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/when-to-use-explicit-constructor</guid>
+    <description><![CDATA[ When to use explicit constructor? ]]></description>
+    <pubDate>Wed, 03 Jun 2026 12:17:00 GMT</pubDate>
   </item><item>
-    <title>const pointer to const objects in C++</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/const-pointer-to-const</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/const-pointer-to-const</guid>
-    <description><![CDATA[ We can create const pointer that points to a const variable. ]]></description>
-    <pubDate>Tue, 05 May 2026 17:51:00 GMT</pubDate>
+    <title>Explicit constructor</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/explicit-constructors</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/explicit-constructors</guid>
+    <description><![CDATA[ Creating explicit constructor using explicit keyword. ]]></description>
+    <pubDate>Wed, 03 Jun 2026 11:12:00 GMT</pubDate>
   </item><item>
-    <title>const pointers in C++</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/const-pointer</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/const-pointer</guid>
-    <description><![CDATA[ creating const pointers which can't be reassigned to another address. ]]></description>
-    <pubDate>Tue, 05 May 2026 17:46:00 GMT</pubDate>
+    <title>Converting constructors</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/converting-constructors</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/converting-constructors</guid>
+    <description><![CDATA[ Converting constructors ]]></description>
+    <pubDate>Tue, 02 Jun 2026 14:07:00 GMT</pubDate>
   </item><item>
-    <title>Pointer to const value in C++</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/pointer-to-const</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/pointer-to-const</guid>
-    <description><![CDATA[ Pointer to const value can be created using const <type>* ]]></description>
-    <pubDate>Tue, 05 May 2026 17:33:00 GMT</pubDate>
+    <title>Rule of three and five</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/rule-of-three-five</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/rule-of-three-five</guid>
+    <description><![CDATA[ unstructured note Rule of three: If class requires user defined copy constructor or destructor or copy assignment, it probably requires all of them. ]]></description>
+    <pubDate>Tue, 02 Jun 2026 06:10:00 GMT</pubDate>
   </item><item>
-    <title>Null pointers in C++</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/null-pointer</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/null-pointer</guid>
-    <description><![CDATA[ A null pointer is a pointer whose value is not an address of another object, but a null value. A null value is something that does not have any value. ]]></description>
-    <pubDate>Tue, 05 May 2026 15:38:00 GMT</pubDate>
+    <title>Delete copy constructor</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/delete-copy-constructor</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/delete-copy-constructor</guid>
+    <description><![CDATA[ Delete copy constructor for class in c++. Prevent invocation of copy constructor for the class using =delete statement. ]]></description>
+    <pubDate>Tue, 02 Jun 2026 05:56:00 GMT</pubDate>
   </item><item>
-    <title>Pointer size in C++</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/pointer-size</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/pointer-size</guid>
-    <description><![CDATA[ What is a size of a pointer in C++? ]]></description>
-    <pubDate>Tue, 05 May 2026 13:15:00 GMT</pubDate>
+    <title>Copy elision</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/copy-elision</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/copy-elision</guid>
+    <description><![CDATA[ Copy constructor optimization. copy elision. ]]></description>
+    <pubDate>Mon, 01 Jun 2026 14:03:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
