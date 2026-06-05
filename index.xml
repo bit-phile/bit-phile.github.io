@@ -6,16 +6,34 @@
       <description>Last 10 notes on bitPhile</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Static member variables</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/static-member-variables</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/static-member-variables</guid>
+    <description><![CDATA[ Static member variables of classes ]]></description>
+    <pubDate>Fri, 05 Jun 2026 12:15:00 GMT</pubDate>
+  </item><item>
+    <title>Class templates with member functions</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/class-templates-with-member-functions</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/class-templates-with-member-functions</guid>
+    <description><![CDATA[ Class templates with member functions ]]></description>
+    <pubDate>Fri, 05 Jun 2026 11:09:00 GMT</pubDate>
+  </item><item>
+    <title>Destructors</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/destructors</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/destructors</guid>
+    <description><![CDATA[ Destructors in C++ ]]></description>
+    <pubDate>Fri, 05 Jun 2026 07:44:00 GMT</pubDate>
+  </item><item>
     <title>Classes and header files</title>
     <link>https://nitinsharmacs.github.io/notes/tech/c++/classes-and-header-files</link>
     <guid>https://nitinsharmacs.github.io/notes/tech/c++/classes-and-header-files</guid>
     <description><![CDATA[ Using classes in multiple files setup. ]]></description>
     <pubDate>Thu, 04 Jun 2026 16:06:00 GMT</pubDate>
   </item><item>
-    <title>static-member-functions</title>
+    <title>Static member functions</title>
     <link>https://nitinsharmacs.github.io/notes/tech/c++/static-member-functions</link>
     <guid>https://nitinsharmacs.github.io/notes/tech/c++/static-member-functions</guid>
-    <description><![CDATA[  ]]></description>
+    <description><![CDATA[ Static member functions in classes ]]></description>
     <pubDate>Thu, 04 Jun 2026 12:07:00 GMT</pubDate>
   </item><item>
     <title>this in classes</title>
@@ -47,24 +65,6 @@
     <guid>https://nitinsharmacs.github.io/notes/tech/c++/move-constructors</guid>
     <description><![CDATA[  ]]></description>
     <pubDate>Wed, 03 Jun 2026 12:21:00 GMT</pubDate>
-  </item><item>
-    <title>When to use explicit constructor?</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/when-to-use-explicit-constructor</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/when-to-use-explicit-constructor</guid>
-    <description><![CDATA[ When to use explicit constructor? ]]></description>
-    <pubDate>Wed, 03 Jun 2026 12:17:00 GMT</pubDate>
-  </item><item>
-    <title>Explicit constructor</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/explicit-constructors</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/explicit-constructors</guid>
-    <description><![CDATA[ Creating explicit constructor using explicit keyword. ]]></description>
-    <pubDate>Wed, 03 Jun 2026 11:12:00 GMT</pubDate>
-  </item><item>
-    <title>Converting constructors</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/converting-constructors</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/converting-constructors</guid>
-    <description><![CDATA[ Converting constructors ]]></description>
-    <pubDate>Tue, 02 Jun 2026 14:07:00 GMT</pubDate>
   </item>
     </channel>
   </rss>

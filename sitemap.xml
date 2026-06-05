@@ -410,6 +410,9 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/class-invariants</loc>
     <lastmod>2026-05-26T12:46:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/class-templates-with-member-functions</loc>
+    <lastmod>2026-06-05T11:09:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/class-templates</loc>
     <lastmod>2026-05-19T09:02:00.000Z</lastmod>
   </url><url>
@@ -520,6 +523,9 @@
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/dereferencing</loc>
     <lastmod>2026-05-04T17:32:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/destructors</loc>
+    <lastmod>2026-06-05T07:44:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/east-const</loc>
     <lastmod>2026-01-30T13:04:00.000Z</lastmod>
@@ -715,6 +721,9 @@
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/static-member-functions</loc>
     <lastmod>2026-06-04T12:07:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/static-member-variables</loc>
+    <lastmod>2026-06-05T12:15:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/static-storage-duration</loc>
     <lastmod>2026-03-05T14:02:00.000Z</lastmod>
