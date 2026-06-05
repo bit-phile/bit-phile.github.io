@@ -6,6 +6,24 @@
       <description>Last 10 notes on bitPhile</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Classes and header files</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/classes-and-header-files</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/classes-and-header-files</guid>
+    <description><![CDATA[ Using classes in multiple files setup. ]]></description>
+    <pubDate>Thu, 04 Jun 2026 16:06:00 GMT</pubDate>
+  </item><item>
+    <title>static-member-functions</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/static-member-functions</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/static-member-functions</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Thu, 04 Jun 2026 12:07:00 GMT</pubDate>
+  </item><item>
+    <title>this in classes</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/this</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/this</guid>
+    <description><![CDATA[ this pointer to point implicit object in member functions in classes. ]]></description>
+    <pubDate>Thu, 04 Jun 2026 11:12:00 GMT</pubDate>
+  </item><item>
     <title>Literal types</title>
     <link>https://nitinsharmacs.github.io/notes/tech/c++/literal-types</link>
     <guid>https://nitinsharmacs.github.io/notes/tech/c++/literal-types</guid>
@@ -47,24 +65,6 @@
     <guid>https://nitinsharmacs.github.io/notes/tech/c++/converting-constructors</guid>
     <description><![CDATA[ Converting constructors ]]></description>
     <pubDate>Tue, 02 Jun 2026 14:07:00 GMT</pubDate>
-  </item><item>
-    <title>Rule of three and five</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/rule-of-three-five</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/rule-of-three-five</guid>
-    <description><![CDATA[ unstructured note Rule of three: If class requires user defined copy constructor or destructor or copy assignment, it probably requires all of them. ]]></description>
-    <pubDate>Tue, 02 Jun 2026 06:10:00 GMT</pubDate>
-  </item><item>
-    <title>Delete copy constructor</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/delete-copy-constructor</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/delete-copy-constructor</guid>
-    <description><![CDATA[ Delete copy constructor for class in c++. Prevent invocation of copy constructor for the class using =delete statement. ]]></description>
-    <pubDate>Tue, 02 Jun 2026 05:56:00 GMT</pubDate>
-  </item><item>
-    <title>Copy elision</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/copy-elision</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/copy-elision</guid>
-    <description><![CDATA[ Copy constructor optimization. copy elision. ]]></description>
-    <pubDate>Mon, 01 Jun 2026 14:03:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
