@@ -6,65 +6,65 @@
       <description>Last 10 notes on bitPhile</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Static member variables</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/static-member-variables</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/static-member-variables</guid>
-    <description><![CDATA[ Static member variables of classes ]]></description>
-    <pubDate>Fri, 05 Jun 2026 12:15:00 GMT</pubDate>
+    <title>Lambda copies and mutable capture</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/lambda-copies-and-mutable-caputre</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/lambda-copies-and-mutable-caputre</guid>
+    <description><![CDATA[ Lambda copies and mutable capture ]]></description>
+    <pubDate>Fri, 17 Jul 2026 07:32:00 GMT</pubDate>
   </item><item>
-    <title>Class templates with member functions</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/class-templates-with-member-functions</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/class-templates-with-member-functions</guid>
-    <description><![CDATA[ Class templates with member functions ]]></description>
-    <pubDate>Fri, 05 Jun 2026 11:09:00 GMT</pubDate>
+    <title>Default captures for lambdas</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/default-captures</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/default-captures</guid>
+    <description><![CDATA[ Default captures for lambdas in C++ ]]></description>
+    <pubDate>Fri, 17 Jul 2026 06:45:00 GMT</pubDate>
   </item><item>
-    <title>Destructors</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/destructors</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/destructors</guid>
-    <description><![CDATA[ Destructors in C++ ]]></description>
-    <pubDate>Fri, 05 Jun 2026 07:44:00 GMT</pubDate>
+    <title>Generic Lambdas</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/generic-lambdas</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/generic-lambdas</guid>
+    <description><![CDATA[ Generic Lambdas in C++ ]]></description>
+    <pubDate>Wed, 15 Jul 2026 11:02:00 GMT</pubDate>
   </item><item>
-    <title>Classes and header files</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/classes-and-header-files</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/classes-and-header-files</guid>
-    <description><![CDATA[ Using classes in multiple files setup. ]]></description>
-    <pubDate>Thu, 04 Jun 2026 16:06:00 GMT</pubDate>
+    <title>Static variables with function templates</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/static-variables-with-function-templates</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/static-variables-with-function-templates</guid>
+    <description><![CDATA[ Static variables with function templates in C++ ]]></description>
+    <pubDate>Wed, 15 Jul 2026 10:33:00 GMT</pubDate>
   </item><item>
-    <title>Static member functions</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/static-member-functions</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/static-member-functions</guid>
-    <description><![CDATA[ Static member functions in classes ]]></description>
-    <pubDate>Thu, 04 Jun 2026 12:07:00 GMT</pubDate>
+    <title>Lambda captures</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/lambda-captures</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/lambda-captures</guid>
+    <description><![CDATA[ Lambda captures for C++ lambdas ]]></description>
+    <pubDate>Wed, 15 Jul 2026 10:24:00 GMT</pubDate>
   </item><item>
-    <title>this in classes</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/this</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/this</guid>
-    <description><![CDATA[ this pointer to point implicit object in member functions in classes. ]]></description>
-    <pubDate>Thu, 04 Jun 2026 11:12:00 GMT</pubDate>
+    <title>Passing functions as arguments</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/passing-functions-as-arguments</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/passing-functions-as-arguments</guid>
+    <description><![CDATA[ Passing functions as arguments in C++ ]]></description>
+    <pubDate>Thu, 09 Jul 2026 07:30:00 GMT</pubDate>
   </item><item>
-    <title>Literal types</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/literal-types</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/literal-types</guid>
-    <description><![CDATA[ Literal types in C++. Literal types vs literals. ]]></description>
-    <pubDate>Thu, 04 Jun 2026 05:10:00 GMT</pubDate>
+    <title>Function pointers</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/function-pointers</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/function-pointers</guid>
+    <description><![CDATA[ Function pointers in C++ ]]></description>
+    <pubDate>Wed, 08 Jul 2026 12:14:00 GMT</pubDate>
   </item><item>
-    <title>Constexpr classes</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/constexpr-classes</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/constexpr-classes</guid>
-    <description><![CDATA[ creating and using constexpr classes. ]]></description>
-    <pubDate>Thu, 04 Jun 2026 04:52:00 GMT</pubDate>
+    <title>Void pointer</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/void-pointer</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/void-pointer</guid>
+    <description><![CDATA[ Void pointer in C++ ]]></description>
+    <pubDate>Wed, 08 Jul 2026 09:42:00 GMT</pubDate>
   </item><item>
-    <title>Constexpr struct aggregate</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/constexpr-struct-aggregate</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/constexpr-struct-aggregate</guid>
-    <description><![CDATA[ Using struct aggregate as constexpr ]]></description>
-    <pubDate>Wed, 03 Jun 2026 14:14:00 GMT</pubDate>
+    <title>Pointer to Pointer</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/pointer-to-pointer</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/pointer-to-pointer</guid>
+    <description><![CDATA[ Pointer to Pointer in C++ ]]></description>
+    <pubDate>Wed, 08 Jul 2026 09:20:00 GMT</pubDate>
   </item><item>
-    <title>move-constructors</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/move-constructors</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/move-constructors</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Wed, 03 Jun 2026 12:21:00 GMT</pubDate>
+    <title>Iterators</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/iterators</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/iterators</guid>
+    <description><![CDATA[ Iterators in C++ ]]></description>
+    <pubDate>Wed, 01 Jul 2026 12:32:00 GMT</pubDate>
   </item>
     </channel>
   </rss>

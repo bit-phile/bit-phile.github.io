@@ -395,6 +395,24 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/aggregate-datatype</loc>
     <lastmod>2026-05-14T12:46:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/aggregate-initialization</loc>
+    <lastmod>2026-06-16T13:55:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/allocation-deallocation-using-constructor-destructor</loc>
+    <lastmod>2026-07-01T12:29:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/allocator</loc>
+    <lastmod>2026-06-17T05:29:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/array-indexing-issue</loc>
+    <lastmod>2026-06-15T06:49:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/array-indexing-using-enumerators</loc>
+    <lastmod>2026-06-15T09:14:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/array-of-references</loc>
+    <lastmod>2026-06-18T06:02:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/arrays</loc>
     <lastmod>2026-05-14T13:50:00.000Z</lastmod>
   </url><url>
@@ -404,8 +422,26 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/benefits-of-encapsulation</loc>
     <lastmod>2026-05-26T06:30:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/brace-elision</loc>
+    <lastmod>2026-06-17T14:15:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/build-configurations</loc>
     <lastmod>2025-10-12T15:45:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/c-stye-array-subscripting-using-pointer-arithmetic</loc>
+    <lastmod>2026-06-23T07:28:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/c-style-array-decay</loc>
+    <lastmod>2026-06-15T07:47:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/c-style-arrays</loc>
+    <lastmod>2026-06-15T10:35:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/c-style-strings</loc>
+    <lastmod>2026-06-24T09:24:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/class-inheritance</loc>
+    <lastmod>2026-06-09T07:04:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/class-invariants</loc>
     <lastmod>2026-05-26T12:46:00.000Z</lastmod>
@@ -485,6 +521,9 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/constructors</loc>
     <lastmod>2026-05-25T11:43:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/containers</loc>
+    <lastmod>2026-06-09T11:25:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/converting-constructors</loc>
     <lastmod>2026-06-02T14:07:00.000Z</lastmod>
   </url><url>
@@ -493,6 +532,9 @@
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/copy-elision</loc>
     <lastmod>2026-06-01T14:03:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/copy-semantic</loc>
+    <lastmod>2026-06-12T10:00:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/creating-namespaces</loc>
     <lastmod>2026-02-27T14:11:00.000Z</lastmod>
@@ -505,6 +547,9 @@
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/default-arguments</loc>
     <lastmod>2026-04-09T10:57:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/default-captures</loc>
+    <lastmod>2026-07-17T06:45:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/default-constructors</loc>
     <lastmod>2026-05-30T03:35:00.000Z</lastmod>
@@ -521,11 +566,17 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/deleting-functions</loc>
     <lastmod>2026-04-07T16:12:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/dependent-name-type-with-template-param</loc>
+    <lastmod>2026-06-12T17:29:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/dereferencing</loc>
     <lastmod>2026-05-04T17:32:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/destructors</loc>
     <lastmod>2026-06-05T07:44:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/dynamic-allocating-arrays</loc>
+    <lastmod>2026-06-30T09:34:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/east-const</loc>
     <lastmod>2026-01-30T13:04:00.000Z</lastmod>
@@ -554,14 +605,29 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/external-linkage</loc>
     <lastmod>2026-03-05T09:51:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/fixed-and-dynamic-arrays</loc>
+    <lastmod>2026-06-15T10:32:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/fixed-width-integers</loc>
     <lastmod>2026-01-16T16:53:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/friend-classes</loc>
+    <lastmod>2026-06-09T06:15:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/friend-member-functions</loc>
+    <lastmod>2026-06-09T06:15:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/friend-non-member-functions</loc>
+    <lastmod>2026-06-09T06:08:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/function-overload-differentiation</loc>
     <lastmod>2026-04-06T09:13:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/function-overloading</loc>
     <lastmod>2026-04-06T08:55:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/function-pointers</loc>
+    <lastmod>2026-07-08T12:14:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/function-templates-multi-files</loc>
     <lastmod>2026-04-13T17:35:00.000Z</lastmod>
@@ -571,6 +637,9 @@
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/function-type-deductions</loc>
     <lastmod>2026-04-05T15:47:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/generic-lambdas</loc>
+    <lastmod>2026-07-15T11:02:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/header-files</loc>
     <lastmod>2025-10-22T15:21:00.000Z</lastmod>
@@ -599,14 +668,29 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/internal-linkage</loc>
     <lastmod>2026-03-03T14:10:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/intro-to-dynamic-memory-allocation</loc>
+    <lastmod>2026-06-29T14:06:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/io-manipulators</loc>
     <lastmod>2026-02-19T14:33:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/is-constant-evaluated-if-consteval</loc>
     <lastmod>2026-04-17T11:46:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/iterators</loc>
+    <lastmod>2026-07-01T12:32:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/lambda-captures</loc>
+    <lastmod>2026-07-15T10:24:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/lambda-copies-and-mutable-caputre</loc>
+    <lastmod>2026-07-17T07:32:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/lambdas</loc>
     <lastmod>2026-04-05T16:19:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/length-of-c-style-array</loc>
+    <lastmod>2026-06-18T10:53:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/linkage</loc>
     <lastmod>2026-03-02T17:05:00.000Z</lastmod>
@@ -674,14 +758,26 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/pass-by-value-vs-pass-by-reference</loc>
     <lastmod>2026-04-24T08:21:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/passing-functions-as-arguments</loc>
+    <lastmod>2026-07-09T07:30:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/passing-return-structs</loc>
     <lastmod>2026-05-15T13:08:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/passing-std-arrays</loc>
+    <lastmod>2026-06-17T09:12:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/pointer-arithmetic</loc>
+    <lastmod>2026-06-23T14:24:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/pointer-size</loc>
     <lastmod>2026-05-05T13:15:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/pointer-to-const</loc>
     <lastmod>2026-05-05T17:33:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/pointer-to-pointer</loc>
+    <lastmod>2026-07-08T09:20:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/pointers</loc>
     <lastmod>2026-05-04T17:28:00.000Z</lastmod>
@@ -695,8 +791,17 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/public-private-members</loc>
     <lastmod>2026-05-25T11:22:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/raii</loc>
+    <lastmod>2026-07-01T11:16:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/range-based-for-loop</loc>
+    <lastmod>2026-06-15T06:47:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/reading-input</loc>
     <lastmod>2025-10-11T14:26:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/return-array-from-function</loc>
+    <lastmod>2026-06-17T13:33:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/return-by-reference-address</loc>
     <lastmod>2026-05-08T14:21:00.000Z</lastmod>
@@ -728,8 +833,47 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/static-storage-duration</loc>
     <lastmod>2026-03-05T14:02:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/static-variables-with-function-templates</loc>
+    <lastmod>2026-07-15T10:33:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/std-array-length-and-indexing</loc>
+    <lastmod>2026-06-17T06:38:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/std-array</loc>
+    <lastmod>2026-06-09T13:46:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/std-get-function-template</loc>
+    <lastmod>2026-06-17T07:10:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/std-getline</loc>
     <lastmod>2026-02-19T14:16:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/std-initializer-list</loc>
+    <lastmod>2026-06-09T16:38:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/std-reference-wrapper</loc>
+    <lastmod>2026-06-18T05:44:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/std-toarray</loc>
+    <lastmod>2026-06-16T14:27:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/std-vector-and-stack</loc>
+    <lastmod>2026-06-16T06:10:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/std-vector-capacity</loc>
+    <lastmod>2026-06-15T10:55:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/std-vector-length-indexing</loc>
+    <lastmod>2026-06-10T16:40:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/std-vector-reserve</loc>
+    <lastmod>2026-06-16T09:04:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/std-vector-resizing</loc>
+    <lastmod>2026-06-15T10:30:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/std-vector</loc>
+    <lastmod>2026-06-09T13:46:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/stdoptional</loc>
     <lastmod>2026-05-12T10:54:00.000Z</lastmod>
@@ -782,6 +926,9 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/translation-unit</loc>
     <lastmod>2026-04-09T14:09:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/traversing-c-style-array-using-pointer-arithmetic</loc>
+    <lastmod>2026-06-24T07:44:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/type-alias</loc>
     <lastmod>2026-04-05T08:17:00.000Z</lastmod>
   </url><url>
@@ -811,6 +958,9 @@
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/variable-initialization-and-assignment</loc>
     <lastmod>2025-10-12T18:48:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/void-pointer</loc>
+    <lastmod>2026-07-08T09:42:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/warning-configs-compiler</loc>
     <lastmod>2025-10-12T17:02:00.000Z</lastmod>
@@ -1312,9 +1462,6 @@
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/numpy/polynomials/polyfit</loc>
     <lastmod>2024-09-24T17:47:00.000Z</lastmod>
-  </url><url>
-    <loc>https://nitinsharmacs.github.io/notes/tech/numpy/see-also</loc>
-    <lastmod>2024-08-23T12:28:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/numpy/slicing</loc>
     <lastmod>2024-09-17T13:16:00.000Z</lastmod>
