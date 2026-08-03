@@ -404,6 +404,9 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/allocator</loc>
     <lastmod>2026-06-17T05:29:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/argument-dependent-lookup</loc>
+    <lastmod>2026-07-29T11:51:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/array-indexing-issue</loc>
     <lastmod>2026-06-15T06:49:00.000Z</lastmod>
   </url><url>
@@ -527,6 +530,9 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/converting-constructors</loc>
     <lastmod>2026-06-02T14:07:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/copy-and-swap-idiom</loc>
+    <lastmod>2026-07-28T14:18:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/copy-constructors</loc>
     <lastmod>2026-06-01T13:50:00.000Z</lastmod>
   </url><url>
@@ -638,6 +644,9 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/function-type-deductions</loc>
     <lastmod>2026-04-05T15:47:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/functors</loc>
+    <lastmod>2026-07-22T07:48:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/generic-lambdas</loc>
     <lastmod>2026-07-15T11:02:00.000Z</lastmod>
   </url><url>
@@ -707,7 +716,7 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/member-functions</loc>
     <lastmod>2026-05-21T14:03:00.000Z</lastmod>
   </url><url>
-    <loc>https://nitinsharmacs.github.io/notes/tech/c++/move-constructors</loc>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/move-constructors-and-assignments</loc>
     <lastmod>2026-06-03T12:21:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/move-semantic</loc>
@@ -740,8 +749,23 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/one-definition-rule</loc>
     <lastmod>2025-10-22T15:58:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/operator-overloading-using-friend-functions</loc>
+    <lastmod>2026-07-21T05:20:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/operator-overloading-using-member-functions</loc>
+    <lastmod>2026-07-21T05:36:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/operator-overloading</loc>
+    <lastmod>2026-07-20T14:20:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/overload-resolution</loc>
     <lastmod>2026-04-07T09:00:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/overload-typecasts</loc>
+    <lastmod>2026-07-22T09:31:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/overloading-assignment-operator</loc>
+    <lastmod>2026-07-22T12:13:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/pass-by-address</loc>
     <lastmod>2026-05-07T13:59:00.000Z</lastmod>
@@ -788,6 +812,9 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/printing-bool-values</loc>
     <lastmod>2026-01-28T10:04:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/programs/smart-pointer-ownership-problem-solved</loc>
+    <lastmod>2026-07-24T12:23:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/public-private-members</loc>
     <lastmod>2026-05-25T11:22:00.000Z</lastmod>
   </url><url>
@@ -809,8 +836,14 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/rule-of-three-five</loc>
     <lastmod>2026-06-02T06:10:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/rvalue-references</loc>
+    <lastmod>2026-07-27T05:54:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/scoped-enumerations</loc>
     <lastmod>2026-05-12T14:45:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/shallow-vs-deep-copy</loc>
+    <lastmod>2026-07-23T09:08:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/size-of-a-struct</loc>
     <lastmod>2026-05-18T10:46:00.000Z</lastmod>
@@ -854,8 +887,14 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/std-reference-wrapper</loc>
     <lastmod>2026-06-18T05:44:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/std-swap</loc>
+    <lastmod>2026-07-28T18:45:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/std-toarray</loc>
     <lastmod>2026-06-16T14:27:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/std-unique-ptr</loc>
+    <lastmod>2026-07-27T14:09:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/std-vector-and-stack</loc>
     <lastmod>2026-06-16T06:10:00.000Z</lastmod>
@@ -901,6 +940,9 @@
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/struct</loc>
     <lastmod>2026-05-14T12:44:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/swappable</loc>
+    <lastmod>2026-07-29T11:53:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/switch-fallthrough</loc>
     <lastmod>2026-03-23T13:18:00.000Z</lastmod>

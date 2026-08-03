@@ -6,65 +6,65 @@
       <description>Last 10 notes on bitPhile</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Lambda copies and mutable capture</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/lambda-copies-and-mutable-caputre</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/lambda-copies-and-mutable-caputre</guid>
-    <description><![CDATA[ Lambda copies and mutable capture ]]></description>
-    <pubDate>Fri, 17 Jul 2026 07:32:00 GMT</pubDate>
+    <title>swappable</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/swappable</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/swappable</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Wed, 29 Jul 2026 11:53:00 GMT</pubDate>
   </item><item>
-    <title>Default captures for lambdas</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/default-captures</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/default-captures</guid>
-    <description><![CDATA[ Default captures for lambdas in C++ ]]></description>
-    <pubDate>Fri, 17 Jul 2026 06:45:00 GMT</pubDate>
+    <title>Argument-dependent lookup</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/argument-dependent-lookup</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/argument-dependent-lookup</guid>
+    <description><![CDATA[ Argument-dependent lookup in C++ ]]></description>
+    <pubDate>Wed, 29 Jul 2026 11:51:00 GMT</pubDate>
   </item><item>
-    <title>Generic Lambdas</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/generic-lambdas</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/generic-lambdas</guid>
-    <description><![CDATA[ Generic Lambdas in C++ ]]></description>
-    <pubDate>Wed, 15 Jul 2026 11:02:00 GMT</pubDate>
+    <title>std-swap</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/std-swap</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/std-swap</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Tue, 28 Jul 2026 18:45:00 GMT</pubDate>
   </item><item>
-    <title>Static variables with function templates</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/static-variables-with-function-templates</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/static-variables-with-function-templates</guid>
-    <description><![CDATA[ Static variables with function templates in C++ ]]></description>
-    <pubDate>Wed, 15 Jul 2026 10:33:00 GMT</pubDate>
+    <title>copy-and-swap idiom</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/copy-and-swap-idiom</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/copy-and-swap-idiom</guid>
+    <description><![CDATA[ copy-and-swap idiom for assignment operator overloading in C++ ]]></description>
+    <pubDate>Tue, 28 Jul 2026 14:18:00 GMT</pubDate>
   </item><item>
-    <title>Lambda captures</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/lambda-captures</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/lambda-captures</guid>
-    <description><![CDATA[ Lambda captures for C++ lambdas ]]></description>
-    <pubDate>Wed, 15 Jul 2026 10:24:00 GMT</pubDate>
+    <title>std::unique_ptr</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/std-unique-ptr</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/std-unique-ptr</guid>
+    <description><![CDATA[ std::unique_ptr to create smart pointers ]]></description>
+    <pubDate>Mon, 27 Jul 2026 14:09:00 GMT</pubDate>
   </item><item>
-    <title>Passing functions as arguments</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/passing-functions-as-arguments</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/passing-functions-as-arguments</guid>
-    <description><![CDATA[ Passing functions as arguments in C++ ]]></description>
-    <pubDate>Thu, 09 Jul 2026 07:30:00 GMT</pubDate>
+    <title>Rvalue references</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/rvalue-references</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/rvalue-references</guid>
+    <description><![CDATA[ Rvalue references in C++ ]]></description>
+    <pubDate>Mon, 27 Jul 2026 05:54:00 GMT</pubDate>
   </item><item>
-    <title>Function pointers</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/function-pointers</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/function-pointers</guid>
-    <description><![CDATA[ Function pointers in C++ ]]></description>
-    <pubDate>Wed, 08 Jul 2026 12:14:00 GMT</pubDate>
+    <title>Smart pointer ownership problem solved</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/programs/smart-pointer-ownership-problem-solved</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/programs/smart-pointer-ownership-problem-solved</guid>
+    <description><![CDATA[ Rough code to solve smart pointer ownership problem in C++ ]]></description>
+    <pubDate>Fri, 24 Jul 2026 12:23:00 GMT</pubDate>
   </item><item>
-    <title>Void pointer</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/void-pointer</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/void-pointer</guid>
-    <description><![CDATA[ Void pointer in C++ ]]></description>
-    <pubDate>Wed, 08 Jul 2026 09:42:00 GMT</pubDate>
+    <title>Shallow vs Deep copy</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/shallow-vs-deep-copy</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/shallow-vs-deep-copy</guid>
+    <description><![CDATA[ Shallow vs Deep copy in c++ using user-defined copy constructor, overloaded assignment operator and destructor. ]]></description>
+    <pubDate>Thu, 23 Jul 2026 09:08:00 GMT</pubDate>
   </item><item>
-    <title>Pointer to Pointer</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/pointer-to-pointer</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/pointer-to-pointer</guid>
-    <description><![CDATA[ Pointer to Pointer in C++ ]]></description>
-    <pubDate>Wed, 08 Jul 2026 09:20:00 GMT</pubDate>
+    <title>Overloading assignment operator</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/overloading-assignment-operator</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/overloading-assignment-operator</guid>
+    <description><![CDATA[ Overloading assignment operator in C++ ]]></description>
+    <pubDate>Wed, 22 Jul 2026 12:13:00 GMT</pubDate>
   </item><item>
-    <title>Iterators</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/iterators</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/iterators</guid>
-    <description><![CDATA[ Iterators in C++ ]]></description>
-    <pubDate>Wed, 01 Jul 2026 12:32:00 GMT</pubDate>
+    <title>Overload typecasts</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/overload-typecasts</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/overload-typecasts</guid>
+    <description><![CDATA[ Overload typecasts in C++ ]]></description>
+    <pubDate>Wed, 22 Jul 2026 09:31:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
