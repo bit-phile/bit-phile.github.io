@@ -443,6 +443,9 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/c-style-strings</loc>
     <lastmod>2026-06-24T09:24:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/calling-overriding-inherited-members</loc>
+    <lastmod>2026-08-03T09:52:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/class-inheritance</loc>
     <lastmod>2026-06-09T07:04:00.000Z</lastmod>
   </url><url>
@@ -542,6 +545,9 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/copy-semantic</loc>
     <lastmod>2026-06-12T10:00:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/covariant-return-types</loc>
+    <lastmod>2026-08-06T12:31:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/creating-namespaces</loc>
     <lastmod>2026-02-27T14:11:00.000Z</lastmod>
   </url><url>
@@ -584,6 +590,9 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/dynamic-allocating-arrays</loc>
     <lastmod>2026-06-30T09:34:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/dynamic-casting</loc>
+    <lastmod>2026-08-09T16:31:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/east-const</loc>
     <lastmod>2026-01-30T13:04:00.000Z</lastmod>
   </url><url>
@@ -610,6 +619,9 @@
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/external-linkage</loc>
     <lastmod>2026-03-05T09:51:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/final-specifier</loc>
+    <lastmod>2026-08-04T14:10:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/fixed-and-dynamic-arrays</loc>
     <lastmod>2026-06-15T10:32:00.000Z</lastmod>
@@ -668,11 +680,17 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/include-directive</loc>
     <lastmod>2025-10-22T13:48:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/inheritance-access-specifiers</loc>
+    <lastmod>2026-08-03T07:10:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/inline-keyword</loc>
     <lastmod>2026-03-06T16:43:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/integral-types</loc>
     <lastmod>2026-01-16T17:22:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/interface-classes</loc>
+    <lastmod>2026-08-07T09:42:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/internal-linkage</loc>
     <lastmod>2026-03-03T14:10:00.000Z</lastmod>
@@ -725,6 +743,9 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/multiple-code-files</loc>
     <lastmod>2025-10-21T14:23:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/multiple-inheritance</loc>
+    <lastmod>2026-08-03T11:59:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/multiple-template-types</loc>
     <lastmod>2026-04-12T16:04:00.000Z</lastmod>
   </url><url>
@@ -746,6 +767,9 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/object-and-variables</loc>
     <lastmod>2025-10-12T18:30:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/object-slicing</loc>
+    <lastmod>2026-08-08T16:04:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/one-definition-rule</loc>
     <lastmod>2025-10-22T15:58:00.000Z</lastmod>
   </url><url>
@@ -766,6 +790,9 @@
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/overloading-assignment-operator</loc>
     <lastmod>2026-07-22T12:13:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/override-specifier</loc>
+    <lastmod>2026-08-04T13:58:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/pass-by-address</loc>
     <lastmod>2026-05-07T13:59:00.000Z</lastmod>
@@ -791,6 +818,9 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/passing-std-arrays</loc>
     <lastmod>2026-06-17T09:12:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/pointer-and-reference-of-base-class-to-derived</loc>
+    <lastmod>2026-08-04T06:52:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/pointer-arithmetic</loc>
     <lastmod>2026-06-23T14:24:00.000Z</lastmod>
   </url><url>
@@ -806,6 +836,9 @@
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/pointers</loc>
     <lastmod>2026-05-04T17:28:00.000Z</lastmod>
   </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/polymorphism</loc>
+    <lastmod>2026-08-04T13:04:00.000Z</lastmod>
+  </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/preprocessors</loc>
     <lastmod>2025-10-22T13:35:00.000Z</lastmod>
   </url><url>
@@ -817,6 +850,9 @@
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/public-private-members</loc>
     <lastmod>2026-05-25T11:22:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/pure-virtual-functions</loc>
+    <lastmod>2026-08-07T09:22:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/raii</loc>
     <lastmod>2026-07-01T11:16:00.000Z</lastmod>
@@ -1000,6 +1036,18 @@
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/variable-initialization-and-assignment</loc>
     <lastmod>2025-10-12T18:48:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/virtual-base-classes</loc>
+    <lastmod>2026-08-04T07:11:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/virtual-destructors</loc>
+    <lastmod>2026-08-05T13:33:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/virtual-functions</loc>
+    <lastmod>2026-08-04T07:10:00.000Z</lastmod>
+  </url><url>
+    <loc>https://nitinsharmacs.github.io/notes/tech/c++/virtual-table</loc>
+    <lastmod>2026-08-07T06:21:00.000Z</lastmod>
   </url><url>
     <loc>https://nitinsharmacs.github.io/notes/tech/c++/void-pointer</loc>
     <lastmod>2026-07-08T09:42:00.000Z</lastmod>

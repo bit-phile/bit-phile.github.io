@@ -6,65 +6,65 @@
       <description>Last 10 notes on bitPhile</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>swappable</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/swappable</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/swappable</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Wed, 29 Jul 2026 11:53:00 GMT</pubDate>
+    <title>Dynamic casting</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/dynamic-casting</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/dynamic-casting</guid>
+    <description><![CDATA[ Dynamic casting in C++ ]]></description>
+    <pubDate>Sun, 09 Aug 2026 16:31:00 GMT</pubDate>
   </item><item>
-    <title>Argument-dependent lookup</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/argument-dependent-lookup</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/argument-dependent-lookup</guid>
-    <description><![CDATA[ Argument-dependent lookup in C++ ]]></description>
-    <pubDate>Wed, 29 Jul 2026 11:51:00 GMT</pubDate>
+    <title>Object slicing</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/object-slicing</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/object-slicing</guid>
+    <description><![CDATA[ Object slicing in C++ ]]></description>
+    <pubDate>Sat, 08 Aug 2026 16:04:00 GMT</pubDate>
   </item><item>
-    <title>std-swap</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/std-swap</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/std-swap</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Tue, 28 Jul 2026 18:45:00 GMT</pubDate>
+    <title>Interface classes</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/interface-classes</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/interface-classes</guid>
+    <description><![CDATA[ Interface classes in C++ ]]></description>
+    <pubDate>Fri, 07 Aug 2026 09:42:00 GMT</pubDate>
   </item><item>
-    <title>copy-and-swap idiom</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/copy-and-swap-idiom</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/copy-and-swap-idiom</guid>
-    <description><![CDATA[ copy-and-swap idiom for assignment operator overloading in C++ ]]></description>
-    <pubDate>Tue, 28 Jul 2026 14:18:00 GMT</pubDate>
+    <title>Pure virtual functions</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/pure-virtual-functions</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/pure-virtual-functions</guid>
+    <description><![CDATA[ Pure virtual functions in C++ ]]></description>
+    <pubDate>Fri, 07 Aug 2026 09:22:00 GMT</pubDate>
   </item><item>
-    <title>std::unique_ptr</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/std-unique-ptr</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/std-unique-ptr</guid>
-    <description><![CDATA[ std::unique_ptr to create smart pointers ]]></description>
-    <pubDate>Mon, 27 Jul 2026 14:09:00 GMT</pubDate>
+    <title>How virtual functions work?</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/virtual-table</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/virtual-table</guid>
+    <description><![CDATA[ How virtual functions work in C++ ]]></description>
+    <pubDate>Fri, 07 Aug 2026 06:21:00 GMT</pubDate>
   </item><item>
-    <title>Rvalue references</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/rvalue-references</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/rvalue-references</guid>
-    <description><![CDATA[ Rvalue references in C++ ]]></description>
-    <pubDate>Mon, 27 Jul 2026 05:54:00 GMT</pubDate>
+    <title>Covariant return types</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/covariant-return-types</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/covariant-return-types</guid>
+    <description><![CDATA[ Covariant return types for virtual functions in C++ ]]></description>
+    <pubDate>Thu, 06 Aug 2026 12:31:00 GMT</pubDate>
   </item><item>
-    <title>Smart pointer ownership problem solved</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/programs/smart-pointer-ownership-problem-solved</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/programs/smart-pointer-ownership-problem-solved</guid>
-    <description><![CDATA[ Rough code to solve smart pointer ownership problem in C++ ]]></description>
-    <pubDate>Fri, 24 Jul 2026 12:23:00 GMT</pubDate>
+    <title>Virtual destructors</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/virtual-destructors</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/virtual-destructors</guid>
+    <description><![CDATA[ Virtual destructors in C++ ]]></description>
+    <pubDate>Wed, 05 Aug 2026 13:33:00 GMT</pubDate>
   </item><item>
-    <title>Shallow vs Deep copy</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/shallow-vs-deep-copy</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/shallow-vs-deep-copy</guid>
-    <description><![CDATA[ Shallow vs Deep copy in c++ using user-defined copy constructor, overloaded assignment operator and destructor. ]]></description>
-    <pubDate>Thu, 23 Jul 2026 09:08:00 GMT</pubDate>
+    <title>Final specifier</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/final-specifier</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/final-specifier</guid>
+    <description><![CDATA[ Final specifier for classes in C++ ]]></description>
+    <pubDate>Tue, 04 Aug 2026 14:10:00 GMT</pubDate>
   </item><item>
-    <title>Overloading assignment operator</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/overloading-assignment-operator</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/overloading-assignment-operator</guid>
-    <description><![CDATA[ Overloading assignment operator in C++ ]]></description>
-    <pubDate>Wed, 22 Jul 2026 12:13:00 GMT</pubDate>
+    <title>Override specifier</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/override-specifier</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/override-specifier</guid>
+    <description><![CDATA[ Override specifier for virtual functions in C++ ]]></description>
+    <pubDate>Tue, 04 Aug 2026 13:58:00 GMT</pubDate>
   </item><item>
-    <title>Overload typecasts</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/overload-typecasts</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/overload-typecasts</guid>
-    <description><![CDATA[ Overload typecasts in C++ ]]></description>
-    <pubDate>Wed, 22 Jul 2026 09:31:00 GMT</pubDate>
+    <title>Polymorphism</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/polymorphism</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/polymorphism</guid>
+    <description><![CDATA[ Polymorphism in C++ ]]></description>
+    <pubDate>Tue, 04 Aug 2026 13:04:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
