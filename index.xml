@@ -6,6 +6,54 @@
       <description>Last 10 notes on bitPhile</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>std::move_if_noexcept</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/std-move-if-noexcept</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/std-move-if-noexcept</guid>
+    <description><![CDATA[ std::move_if_noexcept function in C++ ]]></description>
+    <pubDate>Wed, 12 Aug 2026 13:18:00 GMT</pubDate>
+  </item><item>
+    <title>std::move</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/std-move</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/std-move</guid>
+    <description><![CDATA[ std::move in C++ ]]></description>
+    <pubDate>Wed, 12 Aug 2026 13:08:00 GMT</pubDate>
+  </item><item>
+    <title>noexcept</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/noexcept</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/noexcept</guid>
+    <description><![CDATA[ noexcept specifier for function in C++ ]]></description>
+    <pubDate>Wed, 12 Aug 2026 11:00:00 GMT</pubDate>
+  </item><item>
+    <title>Function try block</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/function-try-block</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/function-try-block</guid>
+    <description><![CDATA[ Function try block in C++ ]]></description>
+    <pubDate>Wed, 12 Aug 2026 07:03:00 GMT</pubDate>
+  </item><item>
+    <title>Re-throw exceptions</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/rethrow-exceptions</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/rethrow-exceptions</guid>
+    <description><![CDATA[ Re-throw exceptions in C++ ]]></description>
+    <pubDate>Tue, 11 Aug 2026 14:19:00 GMT</pubDate>
+  </item><item>
+    <title>Exceptions</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/exceptions</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/exceptions</guid>
+    <description><![CDATA[ Throwing and catching Exceptions in C++ ]]></description>
+    <pubDate>Tue, 11 Aug 2026 12:39:00 GMT</pubDate>
+  </item><item>
+    <title>Class template specialization</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/class-template-specialization</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/class-template-specialization</guid>
+    <description><![CDATA[ Class template specialization in C++ ]]></description>
+    <pubDate>Tue, 11 Aug 2026 09:06:00 GMT</pubDate>
+  </item><item>
+    <title>Function template specialization</title>
+    <link>https://nitinsharmacs.github.io/notes/tech/c++/function-template-specialization</link>
+    <guid>https://nitinsharmacs.github.io/notes/tech/c++/function-template-specialization</guid>
+    <description><![CDATA[ Function template specialization in C++ ]]></description>
+    <pubDate>Tue, 11 Aug 2026 07:22:00 GMT</pubDate>
+  </item><item>
     <title>Dynamic casting</title>
     <link>https://nitinsharmacs.github.io/notes/tech/c++/dynamic-casting</link>
     <guid>https://nitinsharmacs.github.io/notes/tech/c++/dynamic-casting</guid>
@@ -17,54 +65,6 @@
     <guid>https://nitinsharmacs.github.io/notes/tech/c++/object-slicing</guid>
     <description><![CDATA[ Object slicing in C++ ]]></description>
     <pubDate>Sat, 08 Aug 2026 16:04:00 GMT</pubDate>
-  </item><item>
-    <title>Interface classes</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/interface-classes</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/interface-classes</guid>
-    <description><![CDATA[ Interface classes in C++ ]]></description>
-    <pubDate>Fri, 07 Aug 2026 09:42:00 GMT</pubDate>
-  </item><item>
-    <title>Pure virtual functions</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/pure-virtual-functions</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/pure-virtual-functions</guid>
-    <description><![CDATA[ Pure virtual functions in C++ ]]></description>
-    <pubDate>Fri, 07 Aug 2026 09:22:00 GMT</pubDate>
-  </item><item>
-    <title>How virtual functions work?</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/virtual-table</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/virtual-table</guid>
-    <description><![CDATA[ How virtual functions work in C++ ]]></description>
-    <pubDate>Fri, 07 Aug 2026 06:21:00 GMT</pubDate>
-  </item><item>
-    <title>Covariant return types</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/covariant-return-types</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/covariant-return-types</guid>
-    <description><![CDATA[ Covariant return types for virtual functions in C++ ]]></description>
-    <pubDate>Thu, 06 Aug 2026 12:31:00 GMT</pubDate>
-  </item><item>
-    <title>Virtual destructors</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/virtual-destructors</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/virtual-destructors</guid>
-    <description><![CDATA[ Virtual destructors in C++ ]]></description>
-    <pubDate>Wed, 05 Aug 2026 13:33:00 GMT</pubDate>
-  </item><item>
-    <title>Final specifier</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/final-specifier</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/final-specifier</guid>
-    <description><![CDATA[ Final specifier for classes in C++ ]]></description>
-    <pubDate>Tue, 04 Aug 2026 14:10:00 GMT</pubDate>
-  </item><item>
-    <title>Override specifier</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/override-specifier</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/override-specifier</guid>
-    <description><![CDATA[ Override specifier for virtual functions in C++ ]]></description>
-    <pubDate>Tue, 04 Aug 2026 13:58:00 GMT</pubDate>
-  </item><item>
-    <title>Polymorphism</title>
-    <link>https://nitinsharmacs.github.io/notes/tech/c++/polymorphism</link>
-    <guid>https://nitinsharmacs.github.io/notes/tech/c++/polymorphism</guid>
-    <description><![CDATA[ Polymorphism in C++ ]]></description>
-    <pubDate>Tue, 04 Aug 2026 13:04:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
